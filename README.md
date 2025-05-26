@@ -1229,9 +1229,10 @@ gpg --decrypt backup_daily_20250526_102315.sql.gpg > backup_daily_20250526_10231
 Al ver el contenido del sql aparecerá lo siguiente:
 
 ```
-encrypted-data-example
+ls
+sudo cat backup_daily_20250526_102315.sql
 ```
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7aac80fa7e811e22f865bd2b5d81997ff5d49bbf/Images/image75.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/95b2a47a8b98e8301f11992f51698fc925c42128/Images/image99.png)
 
 ### Investigar y comparar eficiencia energética con otros proveedores de la nube. 
 Cómo los diferentes proveedores ofrecen soluciones de CPD administrados por estas empresas y cómo dan cobertura a los requerimientos expuestos anteriormente.
@@ -1299,6 +1300,8 @@ La arquitectura de sistemas propuesta para llevar a cabo el proyecto es la sigui
 | Sistema Operativo | Ubuntu Server 20.04/22.04 | — |
 | Infraestructura | AWS EC2 (instancias t2.large o c5) | Para capacidad de tráfico elevada |
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/95b2a47a8b98e8301f11992f51698fc925c42128/Images/image98.png)
+
 ### Despliegue de servidor de audio con IceCAST + DarkICE
 Este despliegue incluye:
 - Instalación de Icecast2 (https://icecast.org/)
@@ -1314,12 +1317,25 @@ Este despliegue para un servidor de audio con Icecast2 y DarkIce es sobre un sis
 ```bash
 sudo apt update
 sudo apt install -y icecast2 darkice vnstat iftop iperf3 ufw
+```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/95b2a47a8b98e8301f11992f51698fc925c42128/Images/image73.png)
+
+```bash
 # Activar Icecast2
 sudo sed -i 's/ENABLE=false/ENABLE=true/' /etc/default/icecast2
+```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/95b2a47a8b98e8301f11992f51698fc925c42128/Images/image3.png)
+
+```bash
 # Configuración básica para /etc/icecast2/icecast.xml
-sudo tee /etc/icecast2/icecast.xml > /dev/null << 'EOF'
+sudo tee /etc/icecast2/icecast.xml > /dev/null
+```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/95b2a47a8b98e8301f11992f51698fc925c42128/Images/image97.png)
+
+```bash
 <icecast>
 	<location>Servidor Icecast</location>
 	<admin>admin@tudominio.com</admin>
