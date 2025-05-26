@@ -897,14 +897,15 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image90.png)
-
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cb844f9f55e72b0f13452d5e6c98d0dd324b662c/Images/image152.png)
 
 Instalaremos una versión de java ya que el OpenFire usa este:
 
 ```bash
 sudo apt install openjdk-11-jre -y
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cb844f9f55e72b0f13452d5e6c98d0dd324b662c/Images/image116.png)
 
 Creamos el directorio openfire y desde ahí lo ejecutaremos:
 
@@ -914,6 +915,9 @@ wget https://www.igniterealtime.org/downloadServlet?filename=openfire/openfire_4
 sudo dpkg -i openfire.deb
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cb844f9f55e72b0f13452d5e6c98d0dd324b662c/Images/image57.png)
+
+
 Iniciamos el servicio de Openfire:
 
 ```bash
@@ -921,11 +925,16 @@ sudo systemctl start openfire
 sudo systemctl enable openfire
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cb844f9f55e72b0f13452d5e6c98d0dd324b662c/Images/image132.png)
+
+
 Abrimos el puerto y accedemos a la consola web de Openfire:
 
 ```bash
 sudo ufw allow 9090/tcp
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cb844f9f55e72b0f13452d5e6c98d0dd324b662c/Images/image132.png)
 
 Nos conectamos a la consola y accedemos con el usuario:
 ![Acceso a consola Openfire](url_de_la_imagen)
