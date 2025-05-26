@@ -989,12 +989,16 @@ En AWS asignamos la IP pública como IP elástica, es decir, que la IP Pública 
 Editaremos este archivo de la siguiente manera:
 
 ```bash
-sudo nano /etc/bind/named.conf.options
+sudo nano /etc/bind/named.conf.local
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3339d10bb2b1e693a731abd4a34441fc79690ea5/Images/image105.png)
 
 Ahora lo configuramos de la siguiente manera:
+
+```bash
+sudo nano /etc/bind/db.pt-grup1-asixcd1.itb.cat
+```
 
 ```
 ; BIND data file for local loopback interface
@@ -1019,7 +1023,7 @@ pt-grup1-asixcd1 IN A 3.214.255.64
 Ahora configuramos este archivo de la siguiente manera:
 
 ```bash
-sudo nano /etc/bind/named.conf.local
+sudo nano /etc/bind/db.3.214.255
 ```
 
 ```
@@ -1043,8 +1047,16 @@ $TTL 604800
 Probamos la conectividad al dominio:
 
 ```bash
+nslookup pt-grup1-aslxcdi.ttb.cat 44.217.11.138
+```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/281373f25304329cd1d809da02d2475a9983b673/Images/imagen_2025-05-26_211112210.png)
+
+```bash
 ping pt-grup1-asixcd1.itb.cat
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/281373f25304329cd1d809da02d2475a9983b673/Images/image55.png)
 
 #### Segundo Servicio SFTP (Secure FIle Transfer Protocol):
 
