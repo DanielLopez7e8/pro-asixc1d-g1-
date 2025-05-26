@@ -142,16 +142,37 @@ La ubicación privilegiada del CPD se debe a distintos factores para poder asegu
 
 **Materiales y recubrimientos:**
 - Aislamiento a base de fibra de madera y pinturas ecológicas sin COV.
+  
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image35.png).
+  
 - Muros verdes en el exterior para reducir la temperatura ambiente y favorecer el aislamiento térmico y el filtraje y canalización de aguas pluviales.
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image115.png).
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image139.png).
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image123.png).
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image47.png).
+  
 - Gestión de aguas: Sistema de recogida de aguas pluviales para climatización indirecta y uso general.
 
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image2.png).
+  
 **Dimensiones y accesos:**
 - Pasillos con ancho mínimo de 2 m.
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image158.png).
+
 - Iluminación LED inteligente con sensores de presencia.
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image11.png).
 
 #### 2. Sistemas de Climatización y Eficiencia Energética
 **2.1 Climatización Activa**
 - Unidad CRAC: Aire acondicionado de precisión (Computer Room Air Conditioner) de 30 kW con soporte geométrico.
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image60.png).
 
 **Rangos operativos:**
 - Temperatura: 20 °C – 22 °C (media entre 20 °C y 23 °C).
@@ -162,12 +183,27 @@ La ubicación privilegiada del CPD se debe a distintos factores para poder asegu
 
 **2.2 Climatización Pasiva y Geotermia**
 - Free Cooling: Ventilación cruzada cuando la temperatura externa sea < 18 °C.
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image15.png).
+
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image156.png).
+
 - Túneles subterráneos: Aprovechamiento del aire fresco de túneles con compuertas inteligentes y sensores climáticos.
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image56.png).
+  
 - Geotermia: Pozos verticales de 100 m de profundidad para refrigeración base.
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image34.png).
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image135.png).
 
 **2.3 Reutilización de Calor Residual**
 - El calor generado por los servidores se canalizará para calefacción de oficinas y agua sanitaria mediante recuperación térmica.
 - En invierno, se integrará con el sistema de radiadores del edificio.
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image107.png).
 
 **2.4 Eficiencia Energética**
 - Funcionamiento 24/7 optimizado para bajo consumo sin perder potencia.
