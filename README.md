@@ -116,7 +116,7 @@ Hay que proponer una solución de CPD que contemple -como mínimo- los siguiente
 
 ### Brainstorming conceptual del diseño:
 
-[Images/image12.png](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/2436318a60033d2b8823b38d579b37c35dcb9e06/Images/image12.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/raw/2436318a60033d2b8823b38d579b37c35dcb9e06/Images/image12.png)
 
 #### 1. Ubicación Física
 **Situación dentro del edificio**
