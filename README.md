@@ -981,7 +981,10 @@ sudo apt update
 sudo apt install bind9 bind9utils -y
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3339d10bb2b1e693a731abd4a34441fc79690ea5/Images/image124.png)
+
 En AWS asignamos la IP pública como IP elástica, es decir, que la IP Pública no cambia.
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3339d10bb2b1e693a731abd4a34441fc79690ea5/Images/image63.png)
 
 Editaremos este archivo de la siguiente manera:
 
@@ -989,21 +992,29 @@ Editaremos este archivo de la siguiente manera:
 sudo nano /etc/bind/named.conf.options
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3339d10bb2b1e693a731abd4a34441fc79690ea5/Images/image105.png)
+
 Ahora lo configuramos de la siguiente manera:
 
 ```
-options {
-    directory "/var/cache/bind";
-    recursion yes;
-    allow-recursion { 10.0.0.0/24; localhost; };
-    listen-on { 10.0.0.10; 127.0.0.1; };
-    forwarders {
-        8.8.8.8;
-        8.8.4.4;
-    };
-    dnssec-validation auto;
-};
+; BIND data file for local loopback interface
+$TTL 604800
+@ IN SOA ns1.pt-grup1-asixcd1.itb.cat. admin.pt-grup1-asixcd1.itb.cat. (
+    2         ; Serial
+    604800    ; Refresh
+    86400     ; Retry
+    2419200   ; Expire
+    604800 )  ; Negative Cache TTL
+
+; 
+@ IN NS ns1.pt-grup1-asixcd1.itb.cat.
+@ IN A 3.214.255.64
+ns1 IN A 44.217.11.138
+pt-grup1-asixcd1 IN A 3.214.255.64
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3339d10bb2b1e693a731abd4a34441fc79690ea5/Images/image138.png)
+
 
 Ahora configuramos este archivo de la siguiente manera:
 
@@ -1012,11 +1023,22 @@ sudo nano /etc/bind/named.conf.local
 ```
 
 ```
-zone "pt-grup1-asixcd1.itb.cat" {
-    type master;
-    file "/etc/bind/db.pt-grup1-asixcd1.itb.cat";
-};
+; BIND reverse data file for local loopback interface
+$TTL 604800
+@ IN SOA ns1.pt-grup1-asixcd1.itb.cat. admin.pt-grup1-asixcd1.itb.cat. (
+          1              ; Serial
+     604800             ; Refresh
+      86400             ; Retry
+    2419200             ; Expire
+      604800 )         ; Negative Cache TTL
+
+;     
+@ IN NS ns1.pt-grup1-asixcd1.itb.cat.
+64 IN PTR pt-grup1-asixcd1.itb.cat.
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3339d10bb2b1e693a731abd4a34441fc79690ea5/Images/image138.png)
+
 
 Probamos la conectividad al dominio:
 
