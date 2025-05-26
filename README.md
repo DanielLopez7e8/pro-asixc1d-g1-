@@ -916,6 +916,7 @@ sudo dpkg -i openfire.deb
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cb844f9f55e72b0f13452d5e6c98d0dd324b662c/Images/image57.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cb844f9f55e72b0f13452d5e6c98d0dd324b662c/Images/image132.png)
 
 
 Iniciamos el servicio de Openfire:
@@ -925,7 +926,7 @@ sudo systemctl start openfire
 sudo systemctl enable openfire
 ```
 
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cb844f9f55e72b0f13452d5e6c98d0dd324b662c/Images/image132.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3f5fc6880554e02d2113c67a1b7ca20a48372781/Images/image89.png)
 
 
 Abrimos el puerto y accedemos a la consola web de Openfire:
@@ -934,7 +935,14 @@ Abrimos el puerto y accedemos a la consola web de Openfire:
 sudo ufw allow 9090/tcp
 ```
 
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cb844f9f55e72b0f13452d5e6c98d0dd324b662c/Images/image132.png)
+Falta Captura
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3f5fc6880554e02d2113c67a1b7ca20a48372781/Images/image78.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3f5fc6880554e02d2113c67a1b7ca20a48372781/Images/image140.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3f5fc6880554e02d2113c67a1b7ca20a48372781/Images/image80.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3f5fc6880554e02d2113c67a1b7ca20a48372781/Images/image71.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3f5fc6880554e02d2113c67a1b7ca20a48372781/Images/image71.png)
+
 
 Nos conectamos a la consola y accedemos con el usuario:
 ![Acceso a consola Openfire](url_de_la_imagen)
