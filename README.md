@@ -406,13 +406,31 @@ En cuanto la videovigilancia tendremos 2 cámaras las cuales están grabando 24/
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/9f286f70adc3536b8f16c355c99fa5b28d75f467/Images/image18.png)
 
 1. **Detección**
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/12fcee646d497078b9c25a60013f80b1a0a9ad9e/Images/image65.png)
+
    - Sistema VESDA (Very Early Smoke Detection Apparatus): Detección de humo muy temprana mediante aspiración continua del aire. Ideal para entornos críticos como CPDs.
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/12fcee646d497078b9c25a60013f80b1a0a9ad9e/Images/image149.png)
+     
    - Detectores ópticos de humo: Refuerzan la seguridad, ubicados en techos y zonas sensibles.
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/12fcee646d497078b9c25a60013f80b1a0a9ad9e/Images/image129.png)
+
    - Sensores de temperatura y gases: Detectan aumentos bruscos o liberación de compuestos combustibles.
 
-2. **Extinción**
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/12fcee646d497078b9c25a60013f80b1a0a9ad9e/Images/image111.png)
+
+1. **Extinción**
+
    - Sistema de gas limpio (FM-200 o Novec 1230): Apaga el fuego sin dañar los equipos electrónicos y sin dejar residuos.
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/12fcee646d497078b9c25a60013f80b1a0a9ad9e/Images/image106.png)
+     
    - Botellas presurizadas con sensores de activación automática: Se activan automáticamente tras la detección o manualmente desde un panel de control.
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/12fcee646d497078b9c25a60013f80b1a0a9ad9e/Images/image106.png)
+
    - Panel de alarma y corte eléctrico de emergencia: Detiene la energía en caso de incendio para evitar más daños.
 
 ##### Vías de evacuación. 
