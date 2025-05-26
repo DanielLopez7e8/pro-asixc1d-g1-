@@ -209,6 +209,8 @@ La ubicación privilegiada del CPD se debe a distintos factores para poder asegu
 - Funcionamiento 24/7 optimizado para bajo consumo sin perder potencia.
 - Cubierta solar fotovoltaica de 100 m² con potencia estimada de 30 kWp.
 
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image61.png).
+
 #### 3. Seguridad y Discreción
 **Dificultad de identificación:**
 - Puerta sin señalización ni imágenes que revelen el CPD.
@@ -228,15 +230,21 @@ La ubicación privilegiada del CPD se debe a distintos factores para poder asegu
 - Aglomerado revestido con lámina de PVC o HPL resistente al fuego.
 - Cubierta: Vinilo antiestático o conductivo.
 
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image137.png).
+
 **4.2 Techo Técnico**
 - Modelo: Bergvik Iso Floor (diseño flexible y alta estabilidad estructural).
 - Conductos modulares de ventilación intégrés para flujo de aire controlado.
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image37.png).
 
 #### 5. Distribución y Gestión del Cableado
 - Estructura: Bandejas superiores con dos canales separados para datos y alimentación.
 - Cableado de datos: UTP Cat 8 para altas velocidades y compatibilidad CPD.
 - Cableado de alimentación: Con protección contra subidas y bajadas de tensión.
 - Etiquetado: Identificación individual de cada cable para facilitar mantenimiento y reparaciones.
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image88.jpg).
 
 #### 6. Estructuración de Racks
 Se dispondrá de 3 racks idénticos de 42U, 600 mm de ancho y 800 mm de profundidad, color negro, con puertas frontales de cristal templado y traseras de chapa ciega reforzada.
@@ -252,6 +260,8 @@ Se dispondrá de 3 racks idénticos de 42U, 600 mm de ancho y 800 mm de profundi
 
 #### 7. Planos y Diagramas
 Se incluirán planos arquitectónicos detallados y diagramas de flujo de aire, distribución de racks y cableado en formato CAD y PDF para su revisión y validación.
+
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image8.jpg).
 
 ### Infraestructura IT: 
 #### Servidores: Número y tipo de modelo. 
@@ -307,6 +317,9 @@ Estimación de coste para toda la Infraestructura IT descrita (equipos, redes y 
 
 #### Planells i diagrames de com estan distribuïts els racks amb els servidors, patch panels i switches. 
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image120.png).
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image76.png).
+
 U1–U2: Firewall FortiGate HA
 U3–U6: Core switches (Catalyst & Nexus)
 U7–U10: Core Spine adicionales y leaf stacks
@@ -317,6 +330,10 @@ Switch de respaldo
 SAI secundario
 Sistema de monitorización
 U25–U42: Reserva para futuros nodos o almacenamiento
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image110.png).
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image74.png).
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image128.png).
 
 ### Infraestructura eléctrica: 
 #### Sistemas de alimentación redundante. 
@@ -337,12 +354,12 @@ VA = Volti-Amperios del SAI
 Tenemos 3 servidores de consumo medio: 400 W cada uno → 1200 W total
 Utilizaremos un SAI de 1000 VA → 	Eaton 5PX 1000i RT2U
 
-Eficacia (Eff): 0,95 (95%)
+Eficacia (Eff): 0,95 (95%) ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image51.png).
 
 Batería → 6x 12V 9Ah AGM:
 
 N = 6 baterías
-V = 12V por batería
+V = 12V por batería 
 AH = 9 Ah
 
 Cálculo, energía total de las baterías:
