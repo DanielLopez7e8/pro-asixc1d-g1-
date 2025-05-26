@@ -1067,11 +1067,15 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c0ca8fbaa7f4bfe3a5072750712708cc235bc089/Images/imagen_2025-05-26_211833909.png)
+
 Instalamos el proftpd:
 
 ```bash
 sudo apt install proftpd -y
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c0ca8fbaa7f4bfe3a5072750712708cc235bc089/Images/image13.png)
 
 Hacemos un primer start del servicio de ftp:
 
@@ -1079,11 +1083,15 @@ Hacemos un primer start del servicio de ftp:
 sudo systemctl start proftpd
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c0ca8fbaa7f4bfe3a5072750712708cc235bc089/Images/image67.png)
+
 Comprobamos el estado del servicio:
 
 ```bash
 sudo systemctl status proftpd
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c0ca8fbaa7f4bfe3a5072750712708cc235bc089/Images/image104.png)
 
 Configuramos el archivo de la siguiente manera añadiendo o descomentando líneas en `/etc/proftpd/proftpd.conf`:
 
@@ -1094,6 +1102,8 @@ DefaultServer                   on
 UseIPv6                         on
 PassivePorts                    60000 65535
 ```
+
+
 
 Hacemos la prueba para acceder como anónimo:
 
