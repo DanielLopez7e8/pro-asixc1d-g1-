@@ -1205,19 +1205,33 @@ En el Crontab -e meteremos la siguiente línea para que se inicie al iniciar el 
 0 2 * * * /home/ubuntu/backup.sh >> /home/ubuntu/backup.log 2>&1
 ```
 
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image87.png	)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image87.png)
 
 Comprobación:
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7aac80fa7e811e22f865bd2b5d81997ff5d49bbf/Images/image6.png)
+
 Añadimos estas líneas con tal de encriptar la información saliente del SRV2 al SRV3. La información está encriptada.
 
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image87.png	)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7aac80fa7e811e22f865bd2b5d81997ff5d49bbf/Images/image75.png)
 
+
+La información está encriptada, y la desencriptaremos
+
+```
+ls
+sudo cat backup_daily_20250526_102315.sql.gpg
+gpg --decrypt backup_daily_20250526_102315.sql.gpg > backup_daily_20250526_102315.sql
+```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7aac80fa7e811e22f865bd2b5d81997ff5d49bbf/Images/image153.png)
 
 Al ver el contenido del sql aparecerá lo siguiente:
 
 ```
 encrypted-data-example
 ```
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7aac80fa7e811e22f865bd2b5d81997ff5d49bbf/Images/image75.png)
 
 ### Investigar y comparar eficiencia energética con otros proveedores de la nube. 
 Cómo los diferentes proveedores ofrecen soluciones de CPD administrados por estas empresas y cómo dan cobertura a los requerimientos expuestos anteriormente.
