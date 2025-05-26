@@ -1103,58 +1103,115 @@ UseIPv6                         on
 PassivePorts                    60000 65535
 ```
 
-
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image118.png)
 
 Hacemos la prueba para acceder como anónimo:
 
 ```bash
-ftp localhost
+ftp 44.217.11.138
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image136.png)
 
 Ahora configuramos el sftp con el fin de poder acceder como administrador:
 
 ```bash
-sudo nano /etc/proftpd/modules.conf
+sudo nano /etc/proftpd/sftp.conf
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image119.png)
 
 Puertos pasivos:
 
 ```bash
-sudo ufw allow 60000:65535/tcp
+quote PASV
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image77.png)
 
 Backups:
 - Utilizaremos el siguiente script:
 
 ```bash
 #!/bin/bash
-DATE=$(date +%Y%m%d)
-BACKUP_DIR="/backup/$DATE"
 
-# Crear directorio de backup
-mkdir -p $BACKUP_DIR
+# Requisitos previos: en ambos servidores tener instalada
+# la herramienta llamada mysqldump
+# con tal de automatizarlo utilizamos crontab -e y agregamos la siguiente linea:
+# 2 * * * * /home/ubuntu/backup.sh >> /home/ubuntu/backup.log 2>&1
 
-# Backup de la base de datos MySQL
-mysqldump -u root -p'password' --all-databases | gzip > $BACKUP_DIR/all_databases_$DATE.sql.gz
+# Configuración
+FECHA=$(date +%Y%m%d%H%M%S)
+HOY=$(date +%u)                 # Día de la semana (1-7, 1=lunes)
+DIA_MES=$(date +%d)            # Día del mes
+BACKUP_ROOT="/home/ubuntu/backups"
+MYSQL_USER="root"
+MYSQL_PASS=""
+DB_NAME="BD_Transversal"
+REMOTE_USER="ubuntu"
+REMOTE_IP="172.31.44.222"
+REMOTE_DIR="/home/ubuntu/backups"
+KEY="/home/ubuntu/SRV1-KEY.pem"
 
-# Backup de configuraciones importantes
-tar -czvf $BACKUP_DIR/etc_backup_$DATE.tar.gz /etc/nginx /etc/bind /etc/proftpd
+# Clasificación por tipo
+if [ "$DIA_MES" = "01" ]; then
+    TIPO="monthly"
+    RETENCION_DIAS=730  # 24 meses
+elif [ "$HOY" = "7" ]; then
+    TIPO="weekly"
+    RETENCION_DIAS=42   # 6 semanas
+else
+    TIPO="daily"
+    RETENCION_DIAS=14   # 14 días
+fi
 
-# Backup de sitios web
-tar -czvf $BACKUP_DIR/web_backup_$DATE.tar.gz /web /admin
+DESTINO_LOCAL="$BACKUP_ROOT/$TIPO"
+mkdir -p "$DESTINO_LOCAL"
+BACKUP_FILE="$DESTINO_LOCAL/backup_${TIPO}_${FECHA}.sql"
 
-# Limpiar backups antiguos (más de 30 días)
-find /backup -type d -mtime +30 -exec rm -rf {} \;
+# Crear respaldo
+echo "Creando respaldo $TIPO..."
+mysqldump -u"$MYSQL_USER" -p"$MYSQL_PASS" "$DB_NAME" > "$BACKUP_FILE"
+if [ $? -ne 0 ]; then
+    echo "Error creando respaldo"
+    exit 1
+fi
+# Transferir al servidor remoto
+scp -i "$KEY" "$BACKUP_FILE" "$REMOTE_USER@$REMOTE_IP:$REMOTE_DIR/$TIPO/"
+
+if [ $? -eq 0 ]; then
+    echo "Transferencia completada."
+else
+    echo "Error en transferencia"
+    exit 1
+fi
+
+# Limpieza local: eliminar backups antiguos según retención
+echo "Limpiando respaldos locales antiguos..."
+find "$DESTINO_LOCAL" -type f -name "*.sql" -mtime +$RETENCION_DIAS -delete
+
+# Limpieza remota: eliminar backups remotos antiguos (opcional y requiere SSH sin password o clave)
+ssh -i "$KEY" "$REMOTE_USER@$REMOTE_IP" "find $REMOTE_DIR/$TIPO -type f -name '*.sql' -mtime +$RETENCION_DIAS -delete"
+
+echo "Respaldo $TIPO completado y limpieza realizada."
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image40.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image127.png)
 
 En el Crontab -e meteremos la siguiente línea para que se inicie al iniciar el servidor:
 
 ```
-@reboot /path/to/backup_script.sh
+0 2 * * * /home/ubuntu/backup.sh >> /home/ubuntu/backup.log 2>&1
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image87.png	)
 
 Comprobación:
 Añadimos estas líneas con tal de encriptar la información saliente del SRV2 al SRV3. La información está encriptada.
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image87.png	)
+
 
 Al ver el contenido del sql aparecerá lo siguiente:
 
