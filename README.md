@@ -354,13 +354,15 @@ VA = Volti-Amperios del SAI
 Tenemos 3 servidores de consumo medio: 400 W cada uno → 1200 W total
 Utilizaremos un SAI de 1000 VA → 	Eaton 5PX 1000i RT2U
 
-Eficacia (Eff): 0,95 (95%) ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image51.png).
+Eficacia (Eff): 0,95 (95%) ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image51.png)
 
 Batería → 6x 12V 9Ah AGM:
 
 N = 6 baterías
 V = 12V por batería 
 AH = 9 Ah
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/9f286f70adc3536b8f16c355c99fa5b28d75f467/Images/image103.png)
 
 Cálculo, energía total de las baterías:
 
@@ -382,21 +384,33 @@ Este tiempo es la duración del SAI a máxima demanda, es decir que a menor cons
 ##### Elementos de control de acceso a incorporar en el CPD
 Para el control de acceso tendremos una doble autenticación, la cual consta de acceso biométrico y tarjetas RFID, para esto utilizaremos el siguiente:
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/9f286f70adc3536b8f16c355c99fa5b28d75f467/Images/image22.png)
+
 ##### Videovigilancia
 En cuanto la videovigilancia tendremos 2 cámaras las cuales están grabando 24/7, estas tendrán características como visión nocturna, con calidad de grabación de full hd a 30 fps y con la tecnología de Ultra Compresión H.265+, esto para tratar de consumir el menor almacenamiento posible estas estarán configuradas con ips fijas, estas estarán ubicadas en la entrada de la sala del CPD.
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/9f286f70adc3536b8f16c355c99fa5b28d75f467/Images/image167.png)
 
 ##### Sistemas de prevención, detección y de extinción de incendios. 
 1. **Prevención**
    - Control de temperatura y humedad para mantener condiciones estables para evitar sobrecalentamientos y riesgos eléctricos.
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/9f286f70adc3536b8f16c355c99fa5b28d75f467/Images/image93.png)
+
    - Mantenimiento eléctrico y revisión de cableado: Evita cortocircuitos y fallos que puedan generar chispas.
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/9f286f70adc3536b8f16c355c99fa5b28d75f467/Images/image84.png)
+     
    - Uso de materiales ignífugos en racks, suelos y techos técnicos: Reduce la propagación en caso de fuego.
 
-2. **Detección**
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/9f286f70adc3536b8f16c355c99fa5b28d75f467/Images/image18.png)
+
+1. **Detección**
    - Sistema VESDA (Very Early Smoke Detection Apparatus): Detección de humo muy temprana mediante aspiración continua del aire. Ideal para entornos críticos como CPDs.
    - Detectores ópticos de humo: Refuerzan la seguridad, ubicados en techos y zonas sensibles.
    - Sensores de temperatura y gases: Detectan aumentos bruscos o liberación de compuestos combustibles.
 
-3. **Extinción**
+2. **Extinción**
    - Sistema de gas limpio (FM-200 o Novec 1230): Apaga el fuego sin dañar los equipos electrónicos y sin dejar residuos.
    - Botellas presurizadas con sensores de activación automática: Se activan automáticamente tras la detección o manualmente desde un panel de control.
    - Panel de alarma y corte eléctrico de emergencia: Detiene la energía en caso de incendio para evitar más daños.
