@@ -506,11 +506,24 @@ Utilizaremos un RAID 5 por las siguientes razones:
 
 ##### Medidas aplicadas en materia de prevención de RRLL en el CPD
 Aplicamos medidas de prevención de riesgos laborales para proteger al personal y los equipos. Contamos con alfombras antiestáticas para evitar descargas, 
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/e61c771e04b90abff69c27c5448560e6235d8bd7/Images/image28.png)
+
 iluminación con sensores de movimiento para mayor seguridad y eficiencia.
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/e61c771e04b90abff69c27c5448560e6235d8bd7/Images/image114.png)
 
 Señalización clara sobre riesgos y el uso obligatorio de EPIs (como el calzado aislante). 
 
-Además, hemos instalado extintores de CO₂, luces de emergencia, señales de información visible que garantizan una evacuación segura en caso de incidente y se dispone de un mapa de evacuación.
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/e61c771e04b90abff69c27c5448560e6235d8bd7/Images/image94.png)
+
+Además, hemos instalado extintores de CO₂
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/e61c771e04b90abff69c27c5448560e6235d8bd7/Images/image145.png)
+
+luces de emergencia, señales de información visible que garantizan una evacuación segura en caso de incidente y se dispone de un mapa de evacuación.
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/e61c771e04b90abff69c27c5448560e6235d8bd7/Images/image9.png)
 
 ### Sostenibilidad: 
 
