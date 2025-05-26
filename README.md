@@ -1,5 +1,61 @@
 # PROYECTO TRANSVERSAL ASIXc
 
+# 📑 Índice Interactivo - PROYECTO TRANSVERSAL ASIXc
+
+## 📋 Información General
+- [Introducción](#pro01---proyecto-transversal-asixc)
+- [Módulos y Resultados de Aprendizaje implicados](#módulos-y-resultados-de-aprendizaje-ra-implicados)
+- [Metodología del proyecto](#cómo-se-realiza-el-proyecto)
+- [Entrega](#cómo-se-entrega-la-tarea)
+- [Descripción del proyecto](#descripción-del-proyecto)
+- [Objetivos](#objetivos-del-proyecto)
+
+## 🔍 Tareas a Realizar
+
+### 📊 1. [Propuesta de CPD](#1-propuesta-de-cpd)
+- [Brainstorming conceptual](#brainstorming-conceptual-del-diseño)
+- [Infraestructura IT](#infraestructura-it)
+- [Infraestructura eléctrica](#infraestructura-eléctrica)
+- [Seguridad física y lógica](#seguridad-física-y-lógica)
+- [Sostenibilidad](#sostenibilidad)
+- [Estimación de precio del CPD](#estimación-precio-cpd)
+- [Implementación en AWS](#implementación-del-cpd-a-la-nube-aws-con-los-servicios-utilizados-mínimo-de-4---el-servicios-de-audio-video-y-bases-de-datos-se-valoran-en-los-otros-bloques)
+- [Comparativa de proveedores cloud](#investigar-y-comparar-eficiencia-energética-con-otros-proveedores-de-la-nube)
+
+### 🎧 2. [Servicios de Audio y Video](#2-implantación-de-los-servicios-de-audio-y-video)
+- [Descripción de requerimientos](#bloque-03757-i-03758)
+- [Instalación y configuración](#instalación-configuración-y-monitorización-de-un-servidor-de-audio-y-video)
+- [Servidor de Audio con IceCAST](#despliegue-de-servidor-de-audio-con-icecast--darkice)
+- [Servidor de Video con GStreamer](#despliegue-de-servidor-de-vídeo-con-gstreamer-y-rtp-streaming)
+- [Pruebas de ancho de banda](#comprobación-del-ancho-de-banda-con-iperf3)
+
+### 💾 3. [Base de Datos](#3-diseño-e-implementación-de-una-base-de-datos)
+- [Modelo Entidad-Relación](#1-modelo-entidad-relación-e-r)
+- [Modelo Relacional](#2-transformación-al-modelo-relacional)
+- [Implementación](#implementación-de-la-base-de-datos)
+- [NGINX](#31-ngnix)
+
+### 🌱 4. [Sostenibilidad](#4-sostenibilidad)
+- [Eficiencia energética](#sostenibilidad-y-eficiencia-energética)
+- [Cálculo de huella ecológica](#cálculo-de-la-huella-ecológica-del-proyecto-realizado)
+- [Cumplimiento Agenda 2030](#cumplimiento-de-los-objetivos-de-la-agenda-2030)
+- [Medidas de reducción](#3--propuesta-de-medidas-de-reducción-u-optimización-por-ejemplo)
+
+### 📝 5. [Entrega y Presentación](#5-entrega-y-presentación)
+- [Requisitos de presentación](#5-entrega-y-presentación)
+- [Vídeo de presentación](#5-entrega-y-presentación)
+- [Exposición oral](#5-entrega-y-presentación)
+
+## 📊 [Rúbricas de Evaluación](#rúbricas)
+- [Bloque 0371 Fundamentos de maquinaria](#bloque-0371-fundamentos-de-maquinaria)
+- [Bloque 0373 Lenguajes de marcas](#bloque-0373-lenguajes-de-marcas)
+- [Bloque 0375 Servicios de redes e internet](#bloque-0375-servicios-de-redes-e-internet)
+- [Bloque 0377 Administración de bases de datos](#bloque-0377-administración-de-bases-de-datos)
+- [Bloque 1665 Digitalización aplicada](#bloque-1665-digitalización-aplicada-a-los-sectores-productivos)
+- [Bloque 1708 Sostenibilidad](#bloque-1708-sostenibilidad)
+- [Bloque 1709 IPO](#bloque-1709-ipo)
+- [Presentación y defensa](#bloque-presentación-y-defensa-30-de-mayo)
+
 ## Pro01 - Proyecto Transversal ASIXc
 
 ### Módulos y Resultados de Aprendizaje (RA) implicados
