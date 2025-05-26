@@ -696,17 +696,23 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image147.png)
+
 Luego instalamos el servicio de nginx:
 
 ```bash
 sudo apt install nginx -y
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image64.png)
+
 Creamos la estructura de directorios web:
 
 ```bash
 sudo mkdir -p /web /admin
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image95.png)
 
 Agregamos contenido temporal para poder hacer pruebas en las páginas:
 
@@ -715,6 +721,8 @@ echo "<h1>Bienvenido a PT-GRUP1-ASIXC!</h1>" | sudo tee /web/index.html
 echo "<h1>Área Administrativa</h1>" | sudo tee /admin/index.html
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image91.png)
+
 Agregamos permisos:    
 
 ```bash
@@ -722,11 +730,15 @@ sudo chown -R www-data:www-data /web /admin
 sudo chmod -R 755 /web /admin
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image121.png)
+
 Creamos el usuario admin con la contraseña pirineus para la web:
 
 ```bash
 sudo htpasswd -c /etc/nginx/.htpasswd admin
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image58.png)
 
 Configuramos nginx con virtual host y https:
 
@@ -736,6 +748,8 @@ Primero creamos los directorios para los certificados:
 sudo mkdir -p /etc/nginx/ssl
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image52.png)
+
 Creamos el certificado con openssl:
 
 ```bash
@@ -744,6 +758,8 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 -out /etc/nginx/ssl/server.crt \
 -subj "/C=ES/ST=Barcelona/L=Barcelona/O=ITB/CN=pt-grup1-asixcd1.itb.cat"
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image72.png)
 
 Luego creamos el archivo de configuración `/etc/nginx/sites-available/pt-grup1-asixcd1.itb.cat` y añadimos el siguiente contenido:
 
@@ -777,11 +793,15 @@ server {
 }
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image102.png)
+
 Creamos el enlace simbólico para activar el sitio:
 
 ```bash
 sudo ln -s /etc/nginx/sites-available/pt-grup1-asixcd1.itb.cat /etc/nginx/sites-enabled/
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image38.png)
 
 Verificamos y reiniciamos el servicio:
 
@@ -790,6 +810,8 @@ sudo nginx -t
 sudo systemctl restart nginx
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image172.png)
+
 Comprobamos mediante el curl:
 
 https (admin)
@@ -797,22 +819,28 @@ https (admin)
 curl -k -u admin:pirineus https://localhost/admin/
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image122.png)
+
 http (web)
 ```bash
 curl http://localhost/
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image171.png)
+
 Comprobación desde el exterior:
-![Verificación de acceso web](url_de_la_imagen)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image155.png)
 
 Comprobación de la página admin:
 
 Credenciales:
-- Usuario: admin
-- Contraseña: pirineus
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image134.png)
 
 Resultado:
-![Resultado de acceso a admin](url_de_la_imagen)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image42.png)
 
 Ahora mediante nginx cumplimos los siguientes objetivos:
 - Servir contenido multimedia (audio y vídeo bajo demanda)
@@ -823,7 +851,12 @@ Ahora mediante nginx cumplimos los siguientes objetivos:
 Estructura del nginx:
 - Hemos creado estas carpetas en el servidor:
   - /web → Para los archivos públicos (mp3, bin, vídeo, HTML)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image25.png)
+
   - /admin → Para estadísticas y contenido restringido
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image23.png)
 
 Servidor de audio con nginx de baja demanda:
 ```bash
@@ -831,21 +864,29 @@ sudo mkdir -p /web/audio
 sudo cp sample.mp3 /web/audio/
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image159.png)
+
 Servidor de video con nginx:
 ```bash
 sudo mkdir -p /web/video
 sudo cp sample.webm /web/video/
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image48.png)
+
 Simulación de ancho de banda, hemos generado un archivo grande (test100mb.bin) con dd para que mediante el curl los clientes puedan ver el ancho de banda:
 ```bash
 dd if=/dev/urandom of=/web/test100mb.bin bs=1M count=100
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image166.png)
+
 Estadísticas del servidor (GoAccess):
 - Hemos instalado GoAccess y lo usamos para generar stats.html
 - Este archivo muestra las estadísticas de tráfico, archivos accedidos, IPs, etc.
 - Lo colocamos en /admin, protegido por usuario y contraseña + IP
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image90.png)
 
 #### SRV2 - OPENFIRE
 
@@ -855,6 +896,9 @@ Primero haremos un apt update y upgrade:
 sudo apt update
 sudo apt upgrade -y
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image90.png)
+
 
 Instalaremos una versión de java ya que el OpenFire usa este:
 
