@@ -941,17 +941,37 @@ Falta Captura
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3f5fc6880554e02d2113c67a1b7ca20a48372781/Images/image140.png)
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3f5fc6880554e02d2113c67a1b7ca20a48372781/Images/image80.png)
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3f5fc6880554e02d2113c67a1b7ca20a48372781/Images/image71.png)
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3f5fc6880554e02d2113c67a1b7ca20a48372781/Images/image71.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image70.png)
 
 
 Nos conectamos a la consola y accedemos con el usuario:
-![Acceso a consola Openfire](url_de_la_imagen)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image151.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image112.png)
 
 Creamos los usuarios:
-![Creación de usuarios](url_de_la_imagen)
+
+Biel:
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image117.png)
+
+Giuseppe:
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image29.png)
+
+Bryan:
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image66.png)
+
+Dani:
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image1.png)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image109.png)
 
 Comprobamos desde los clientes el correcto funcionamiento:
-![Chat funcionando](url_de_la_imagen)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image53.png)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image83.png)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image81.png)
 
 #### SRV3 - Bind9
 Instalamos el bind9:
