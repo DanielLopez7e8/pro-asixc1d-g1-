@@ -118,6 +118,13 @@ Hay que proponer una solución de CPD que contemple -como mínimo- los siguiente
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/raw/2436318a60033d2b8823b38d579b37c35dcb9e06/Images/image12.png)
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/75bd6a0e21bbce31b0d908b59996031fe63925b7/Images/image20.png)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/75bd6a0e21bbce31b0d908b59996031fe63925b7/Images/image108.png).
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/75bd6a0e21bbce31b0d908b59996031fe63925b7/Images/image148.png).
+
+
 #### 1. Ubicación Física
 **Situación dentro del edificio**
 
