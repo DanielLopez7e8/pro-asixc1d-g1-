@@ -425,18 +425,24 @@ En cuanto la videovigilancia tendremos 2 cámaras las cuales están grabando 24/
 
    - Sistema de gas limpio (FM-200 o Novec 1230): Apaga el fuego sin dañar los equipos electrónicos y sin dejar residuos.
 
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/12fcee646d497078b9c25a60013f80b1a0a9ad9e/Images/image106.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/12fcee646d497078b9c25a60013f80b1a0a9ad9e/Images/image50.png)
      
    - Botellas presurizadas con sensores de activación automática: Se activan automáticamente tras la detección o manualmente desde un panel de control.
 
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/12fcee646d497078b9c25a60013f80b1a0a9ad9e/Images/image106.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/fa82b6ab91277ce1afe07377d329175694376850/Images/image106.png)
 
    - Panel de alarma y corte eléctrico de emergencia: Detiene la energía en caso de incendio para evitar más daños.
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/fa82b6ab91277ce1afe07377d329175694376850/Images/image79.png)
 
 ##### Vías de evacuación. 
 Hemos instalado salidas de emergencia con señalización LED autónoma, visible incluso en condiciones de humo o fallo eléctrico. Además, hemos colocado planos de evacuación bien señalizados que muestran las rutas de escape, zonas seguras y el punto donde te encuentras. Las puertas están equipadas con barras antipánico y fabricadas con materiales ignífugos, sin necesidad de llaves para abrirlas, lo que nos garantiza una evacuación rápida y segura en caso de cualquier emergencia.
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/fa82b6ab91277ce1afe07377d329175694376850/Images/image45.png)
+
 ##### Diagrames, planells i fotografies de tota la seguretat física incorporada.
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/fa82b6ab91277ce1afe07377d329175694376850/Images/image46.png)
 
 #### Seguridad lógica: 
 ##### Restricción de acceso mediante autorización.
