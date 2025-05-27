@@ -35,7 +35,9 @@
 - [Implementación](#implementación-de-la-base-de-datos)
 
 ### 4. [Nuestros Servicios](#nuestros-servicios)
+SRV1:
 - [NGINX](#srv1---instalación-de-nginx)
+SRV2:
 - [OpenFire](#srv2---openfire)
 
 ### 🌱 5. [Sostenibilidad](#4-sostenibilidad)
