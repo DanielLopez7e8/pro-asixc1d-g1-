@@ -776,39 +776,25 @@ Luego creamos el archivo de configuración `/etc/nginx/sites-available/pt-grup1-
 
 ```nginx
 
-GNU nano 6.2                             /etc/nginx/sites-available/pt-grup1-asixcd1.itb.cat
-&nbsp;
-&nbsp;
-
 server {
     listen 80;
     server_name pt-grup1-asixcd1.itb.cat;
     return 301 https://$host$request_uri;
 }
-&nbsp;
-&nbsp;
 
 server {
     listen 443 ssl;
     server_name pt-grup1-asixcd1.itb.cat;
-&nbsp;
-&nbsp;
 
     ssl_certificate /etc/ssl/pt-grup1/pt-grup1.crt;
     ssl_certificate_key /etc/ssl/pt-grup1/pt-grup1.key;
-&nbsp;
-&nbsp;
 
     root /var/www/pt-grup1-asixcd1.itb.cat/web;
     index index.html;
-&nbsp;
-&nbsp;
 
     location / {
         try_files $uri $uri/ =404;
     }
-&nbsp;
-&nbsp;
 
     location /admin/ {
         alias /var/www/pt-grup1-asixcd1.itb.cat/admin/;
@@ -851,7 +837,7 @@ curl -k -u admin:pirineus https://pt-grup1-asixcd1.itb.cat/admin/
 
 http (web)
 ```bash
-curl http://localhost/
+curl -k https://pt-grup1-asixcd1.itb.cat
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image171.png)
@@ -923,8 +909,7 @@ Estadísticas del servidor (GoAccess):
 Primero haremos un apt update y upgrade:
 
 ```bash
-sudo apt update
-sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cb844f9f55e72b0f13452d5e6c98d0dd324b662c/Images/image152.png)
@@ -940,9 +925,9 @@ sudo apt install openjdk-11-jre -y
 Creamos el directorio openfire y desde ahí lo ejecutaremos:
 
 ```bash
-cd ~
-wget https://www.igniterealtime.org/downloadServlet?filename=openfire/openfire_4.7.5_all.deb -O openfire.deb
-sudo dpkg -i openfire.deb
+mkdir -p ~/openfire
+cd ~/openfire
+wget https://www.igniterealtime.org/downloadServlet?filename=openfire/openfire_4.9.2_all.deb -O openfire_4.9.2_all.deb
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cb844f9f55e72b0f13452d5e6c98d0dd324b662c/Images/image57.png)
@@ -1008,7 +993,6 @@ Comprobamos desde los clientes el correcto funcionamiento:
 Instalamos el bind9:
 
 ```bash
-sudo apt update
 sudo apt install bind9 bind9utils -y
 ```
 
@@ -1033,19 +1017,19 @@ sudo nano /etc/bind/db.pt-grup1-asixcd1.itb.cat
 
 ```
 ; BIND data file for local loopback interface
-$TTL 604800
-@ IN SOA ns1.pt-grup1-asixcd1.itb.cat. admin.pt-grup1-asixcd1.itb.cat. (
-    2         ; Serial
-    604800    ; Refresh
-    86400     ; Retry
-    2419200   ; Expire
-    604800 )  ; Negative Cache TTL
+$TTL    604800
+@       IN      SOA     ns1.pt-grup1-asixcd1.itb.cat. admin.pt-grup1-asixcd1.itb.cat. (
+                             2               ; Serial
+                        604800               ; Refresh
+                         86400               ; Retry
+                       2419200               ; Expire
+                        604800 )             ; Negative Cache TTL
 
-; 
-@ IN NS ns1.pt-grup1-asixcd1.itb.cat.
-@ IN A 3.214.255.64
-ns1 IN A 44.217.11.138
-pt-grup1-asixcd1 IN A 3.214.255.64
+;       
+@       IN      NS      ns1.pt-grup1-asixcd1.itb.cat.
+@       IN      A       3.214.255.64
+ns1     IN      A       44.217.11.138
+pt-grup1-asixcd1    IN      A       3.214.255.64
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3339d10bb2b1e693a731abd4a34441fc79690ea5/Images/image138.png)
@@ -1058,18 +1042,20 @@ sudo nano /etc/bind/db.3.214.255
 ```
 
 ```
-; BIND reverse data file for local loopback interface
-$TTL 604800
-@ IN SOA ns1.pt-grup1-asixcd1.itb.cat. admin.pt-grup1-asixcd1.itb.cat. (
-          1              ; Serial
-     604800             ; Refresh
-      86400             ; Retry
-    2419200             ; Expire
-      604800 )         ; Negative Cache TTL
+; BIND data file for local loopback interface
+$TTL    604800
+@       IN      SOA     ns1.pt-grup1-asixcd1.itb.cat. admin.pt-grup1-asixcd1.itb.cat. (
+                             2           ; Serial
+                         604800       ; Refresh
+                          86400       ; Retry
+                        2419200       ; Expire
+                         604800 )     ; Negative Cache TTL
 
-;     
-@ IN NS ns1.pt-grup1-asixcd1.itb.cat.
-64 IN PTR pt-grup1-asixcd1.itb.cat.
+; 
+@       IN      NS      ns1.pt-grup1-asixcd1.itb.cat.
+@       IN      A       3.214.255.64
+ns1     IN      A       44.217.11.138
+pt-grup1-asixcd1 IN A       3.214.255.64
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3339d10bb2b1e693a731abd4a34441fc79690ea5/Images/image138.png)
@@ -1094,8 +1080,7 @@ ping pt-grup1-asixcd1.itb.cat
 Update y Upgrade:
 
 ```bash
-sudo apt update
-sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c0ca8fbaa7f4bfe3a5072750712708cc235bc089/Images/imagen_2025-05-26_211833909.png)
@@ -1127,11 +1112,50 @@ sudo systemctl status proftpd
 Configuramos el archivo de la siguiente manera añadiendo o descomentando líneas en `/etc/proftpd/proftpd.conf`:
 
 ```
-ServerName                      "FTP Server"
-ServerType                      standalone
-DefaultServer                   on
-UseIPv6                         on
-PassivePorts                    60000 65535
+<Limit LOGIN>
+    Allowuser ftp
+    DenyAll
+</Limit>
+
+<Anonymous /var/ftp/>
+    User ftp
+    Group nogroup
+    # We want clients to be able to login with "anonymous" as well as "ftp"
+    UserAlias anonymous ftp
+    # Cosmetic changes, all files belong to ftp user
+    DirFakeUser on ftp
+    DirFakeGroup on ftp
+
+    RequireValidShell off
+
+    # Limit the maximum number of anonymous logins
+    MaxClients 10
+
+    # We want 'welcome.msg' displayed at login, and '.message' displayed
+    # in each newly chdir directory.
+    DisplayLogin welcome.msg
+    DisplayChdir .message
+
+    # Limit WRITE everywhere in the anonymous chroot
+    <Directory *>
+        <Limit WRITE>
+            DenyAll
+        </Limit>
+    </Directory>
+
+    # Uncomment this if you're brave.
+    # <Directory incoming>
+    #     Umask 022 is a good standard umask to prevent new files and dirs
+    #     (second parm) from being group and world writable.
+    #     Umask022 022
+    #     <Limit READ WRITE>
+    #         DenyAll
+    #     </Limit>
+    #     <Limit STORE>
+    #         AllowAll
+    #     </Limit>
+    # </Directory>
+</Anonymous>
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image118.png)
@@ -1147,7 +1171,7 @@ ftp 44.217.11.138
 Ahora configuramos el sftp con el fin de poder acceder como administrador:
 
 ```bash
-sudo nano /etc/proftpd/sftp.conf
+sudo cat /etc/proftpd/sftp.conf
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image119.png)
@@ -1155,6 +1179,7 @@ sudo nano /etc/proftpd/sftp.conf
 Puertos pasivos:
 
 ```bash
+ftp ftp@44.217.11.138
 quote PASV
 ```
 
@@ -1166,15 +1191,15 @@ Backups:
 ```bash
 #!/bin/bash
 
-# Requisitos previos: en ambos servidores tener instalada
-# la herramienta llamada mysqldump
-# con tal de automatizarlo utilizamos crontab -e y agregamos la siguiente linea:
-# 2 * * * * /home/ubuntu/backup.sh >> /home/ubuntu/backup.log 2>&1
+#Requisitos previos: en ambos servidores tener instalada
+#la herramienta llamada mysqldump
+#con tal de automatizarlo utilizamos crontab -e y agregamos la siguiente linea:
+#0 2 * * * /home/ubuntu/backup.sh >> /home/ubuntu/backup.log 2>&1
 
 # Configuración
-FECHA=$(date +%Y%m%d%H%M%S)
-HOY=$(date +%u)                 # Día de la semana (1-7, 1=lunes)
-DIA_MES=$(date +%d)            # Día del mes
+FECHA=$(date +%Y%m%d_%H%M%S)
+HOY=$(date +%u)      # Día de la semana (1-7, 1=lunes)
+DIA_MES=$(date +%d)  # Día del mes
 BACKUP_ROOT="/home/ubuntu/backups"
 MYSQL_USER="root"
 MYSQL_PASS=""
@@ -1185,36 +1210,44 @@ REMOTE_DIR="/home/ubuntu/backups"
 KEY="/home/ubuntu/SRV1-KEY.pem"
 
 # Clasificación por tipo
-if [ "$DIA_MES" = "01" ]; then
-    TIPO="monthly"
-    RETENCION_DIAS=730  # 24 meses
-elif [ "$HOY" = "7" ]; then
-    TIPO="weekly"
-    RETENCION_DIAS=42   # 6 semanas
+if [ "$DIA_MES" == "01" ]; then
+  TIPO="monthly"
+  RETENCION_DIAS=730  # 24 meses
+elif [ "$HOY" == "7" ]; then
+  TIPO="weekly"
+  RETENCION_DIAS=42   # 6 semanas
 else
-    TIPO="daily"
-    RETENCION_DIAS=14   # 14 días
+  TIPO="daily"
+  RETENCION_DIAS=14   # 14 días
 fi
 
 DESTINO_LOCAL="$BACKUP_ROOT/$TIPO"
-mkdir -p "$DESTINO_LOCAL"
-BACKUP_FILE="$DESTINO_LOCAL/backup_${TIPO}_${FECHA}.sql"
+mkdir -p $DESTINO_LOCAL
+BACKUP_FILE="$DESTINO_LOCAL/backup_${TIPO}_$FECHA.sql"
 
 # Crear respaldo
 echo "Creando respaldo $TIPO..."
-mysqldump -u"$MYSQL_USER" -p"$MYSQL_PASS" "$DB_NAME" > "$BACKUP_FILE"
+mysqldump -u"$MYSQL_USER" "$DB_NAME" > "$BACKUP_FILE"
+
 if [ $? -ne 0 ]; then
-    echo "Error creando respaldo"
-    exit 1
+  echo "Error creando respaldo"
+  exit 1
 fi
+
+# Encriptar con GPG
+GPG_PASS="SRV1-KEY.pem"
+gpg --batch --yes --passphrase "$GPG_PASS" -c "$BACKUP_FILE"
+rm "$BACKUP_FILE"  # Borramos el archivo plano
+BACKUP_FILE="$BACKUP_FILE.gpg"
+
 # Transferir al servidor remoto
-scp -i "$KEY" "$BACKUP_FILE" "$REMOTE_USER@$REMOTE_IP:$REMOTE_DIR/$TIPO/"
+scp -i "$KEY" $BACKUP_FILE "$REMOTE_USER@$REMOTE_IP:$REMOTE_DIR/$TIPO/"
 
 if [ $? -eq 0 ]; then
-    echo "Transferencia completada."
+  echo "Transferencia completada."
 else
-    echo "Error en transferencia"
-    exit 1
+  echo "Error en transferencia"
+  exit 1
 fi
 
 # Limpieza local: eliminar backups antiguos según retención
@@ -1222,6 +1255,7 @@ echo "Limpiando respaldos locales antiguos..."
 find "$DESTINO_LOCAL" -type f -name "*.sql" -mtime +$RETENCION_DIAS -delete
 
 # Limpieza remota: eliminar backups remotos antiguos (opcional y requiere SSH sin password o clave)
+echo "Limpiando respaldos remotos antiguos..."
 ssh -i "$KEY" "$REMOTE_USER@$REMOTE_IP" "find $REMOTE_DIR/$TIPO -type f -name '*.sql' -mtime +$RETENCION_DIAS -delete"
 
 echo "Respaldo $TIPO completado y limpieza realizada."
@@ -1346,7 +1380,6 @@ Este despliegue para un servidor de audio con Icecast2 y DarkIce es sobre un sis
 **Instalación del server de audio**
 
 ```bash
-sudo apt update
 sudo apt install -y icecast2 darkice vnstat iftop iperf3 ufw
 ```
 
@@ -1373,16 +1406,12 @@ Configuración de /etc/darkice.cfg
 duration         = 0
 bufferSecs       = 5
 reconnect        = yes
-&nbsp;
-&nbsp;
 
 [input]
 device           = hw:1,1
 sampleRate       = 44100
 bitsPerSample    = 16
 channel          = 2
-&nbsp;
-&nbsp;
 
 [icecast2-0]
 bitrateMode      = cbr
@@ -1429,32 +1458,25 @@ El stream estará disponible en: http://3.214.255.64:8000/grup1.mp3
 Guardamos el contenido en un fichero:
 ```bash
 #!/bin/bash
-&nbsp;
-&nbsp;
+
 
 # Cargar módulo loopback (snd-aloop)
 echo "Cargando módulo snd-aloop..."
 sudo modprobe snd-aloop > /dev/null 2>&1
-&nbsp;
-&nbsp;
+
 
 # Mostrar las tarjetas de audio disponibles
 echo "Listando tarjetas de audio:"
 aplay -l
-&nbsp;
-&nbsp;
+
 
 # Reiniciar el servicio darkice
 echo "Reiniciando servicio darkice..."
 sudo systemctl restart darkice > /dev/null 2>&1
-&nbsp;
-&nbsp;
 
 # Ejecutar darkice con configuración explícita (en background)
 echo "Ejecutando darkice con configuración /etc/darkice.cfg..."
 sudo darkice -c /etc/darkice.cfg > /dev/null 2>&1 &
-&nbsp;
-&nbsp;
 
 # Reproducir el mp3 en bucle infinito en hw:1,0 (en background)
 echo "Reproduciendo /home/ubuntu/musica/trueno-feid.mp3 en hw:1,0 en bucle infinito..."
@@ -1540,29 +1562,23 @@ Guardamos el contenido en un fichero:
 #!/bin/bash
 # Ruta del archivo de video a transmitir
 VIDEO="/home/ubuntu/video/trueno.mp4"
-&nbsp;
-&nbsp;
 
 # Configuración del servidor Icecast
 ICECAST_IP="3.214.255.64"   # Dirección IP del servidor Icecast
 ICECAST_PORT="8000"         # Puerto del servidor Icecast
 MOUNT="/video.webm"         # Punto de montaje donde se publicará el stream
 PASSWORD="sourcepass"       # Contraseña para emitir en Icecast
-&nbsp;
-&nbsp;
+
 
 # Esperar unos segundos para asegurarse de que el sistema esté listo
 echo "Esperando 10 segundos para la inicialización del sistema..."
 sleep 10
-&nbsp;
-&nbsp;
+
 
 echo "Iniciando bucle de transmisión infinita..."
 # Bucle infinito para mantener la transmisión activa continuamente
 while true; do
     echo "Reproduciendo $VIDEO hacia $ICECAST_IP:$ICECAST_PORT$MOUNT..."
-&nbsp;
-&nbsp;
 
     # Comando GStreamer para reproducir el video y transmitirlo a Icecast
     gst-launch-1.0 -q \
@@ -1572,16 +1588,12 @@ while true; do
     videoscale ! video/x-raw,width=1280,height=720 ! vp8enc deadline=1 \ # Codificar el video con VP8 (formato WebM)
     ! webmmux streamable=true name=mux \ # Multiplexar el audio y video en un contenedor WebM
     ! shout2send mount="$MOUNT" port="$ICECAST_PORT" password="$PASSWORD" ip="$ICECAST_IP" \ 
-&nbsp;
-&nbsp;
 
     # Procesamiento del audio
     dec. ! queue ! audioconvert \   # Convertir el audio a un formato compatible
     ! audioresample \                # Ajustar la frecuencia de muestreo
     ! vorbisenc \                    # Codificar el audio con Vorbis (formato WebM)
     ! mux.                            # Unir el audio al contenedor y redirigir salida
-&nbsp;
-&nbsp;
 
     # Si la transmisión termina, esperar unos segundos y reiniciar
     echo "Stream finalizado. Reiniciando en 3 segundos..."
@@ -1894,33 +1906,21 @@ Creamos los usuarios y le damos los permisos:
 ```sql
 mysql> CREATE USER 'sofia'@'%' IDENTIFIED BY 'Sofia2025!';
 Query OK, 0 rows affected (0.01 sec)
-&nbsp;
-&nbsp;
 
 mysql> GRANT SELECT, INSERT, UPDATE, DELETE ON BD_Transversal.Empleado TO 'sofia'@'%';
 Query OK, 0 rows affected (0.01 sec)
-&nbsp;
-&nbsp;
 
 mysql> CREATE USER 'miguel'@'%' IDENTIFIED BY 'Migu3l2025!';
 Query OK, 0 rows affected (0.02 sec)
-&nbsp;
-&nbsp;
 
 mysql> GRANT SELECT, INSERT, UPDATE ON BD_Transversal.Empleado TO 'miguel'@'%';
 Query OK, 0 rows affected (0.01 sec)
-&nbsp;
-&nbsp;
 
 mysql> CREATE USER 'elena'@'%' IDENTIFIED BY 'El3na2025!';
 Query OK, 0 rows affected (0.01 sec)
-&nbsp;
-&nbsp;
 
 mysql> GRANT SELECT ON BD_Transversal.Empleado TO 'elena'@'%';
 Query OK, 0 rows affected (0.01 sec)
-&nbsp;
-&nbsp;
 
 mysql> CREATE USER 'raul'@'%' IDENTIFIED BY 'Raul2025!';
 Query OK, 0 rows affected (0.01 sec)
@@ -1932,23 +1932,15 @@ Permisos
 ```bash
 mysql> GRANT SELECT (Nombre, Apellidos, CodigoGrupoNivel) ON BD_Transversal.Empleado TO 'raul'@'%';
 Query OK, 0 rows affected (0.01 sec)
-&nbsp;
-&nbsp;
 
 mysql> CREATE USER 'joel'@'%' IDENTIFIED BY 'J03l2025!';
 Query OK, 0 rows affected (0.01 sec)
-&nbsp;
-&nbsp;
 
 mysql> GRANT SELECT ON BD_Transversal.Empleado TO 'joel'@'%';
 Query OK, 0 rows affected (0.01 sec)
-&nbsp;
-&nbsp;
 
 mysql> FLUSH PRIVILEGES;
 Query OK, 0 rows affected (0.01 sec)
-&nbsp;
-&nbsp;
 
 mysql>
 ```
