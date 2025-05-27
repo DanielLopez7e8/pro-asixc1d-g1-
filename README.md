@@ -1959,8 +1959,6 @@ mysql -h 52.200.122.76 -P 3306 -u sofia -p
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image44.png)
 
-## 3.1 NGNIX
-
 ## 4. Sostenibilidad
 ### Sostenibilidad y eficiencia energética:
 Alineándonos con nuestros valores empresariales y los ODS, es fundamental para nosotros que todo el proyecto sea diseñado con un enfoque claro de sostenibilidad. Buscamos optimizar el uso de la energía y utilizar soluciones que reduzcan el impacto ambiental de nuestras operaciones. Nos gustaría explorar el uso de fuentes de energía renovables, así como la implementación de prácticas de eficiencia energética dentro del CPD (Centro de Procesamiento de Datos).
