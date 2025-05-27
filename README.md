@@ -317,8 +317,8 @@ Estimación de coste para toda la Infraestructura IT descrita (equipos, redes y 
 
 #### Planells i diagrames de com estan distribuïts els racks amb els servidors, patch panels i switches. 
 
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image120.png).
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image76.png).
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image120.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image76.png)
 
 U1–U2: Firewall FortiGate HA
 U3–U6: Core switches (Catalyst & Nexus)
@@ -331,9 +331,9 @@ SAI secundario
 Sistema de monitorización
 U25–U42: Reserva para futuros nodos o almacenamiento
 
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image110.png).
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image74.png).
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image128.png).
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image110.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image74.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image128.png)
 
 ### Infraestructura eléctrica: 
 #### Sistemas de alimentación redundante. 
