@@ -1,6 +1,4 @@
-# PROYECTO TRANSVERSAL ASIXc
-
-# 📑 Índice Interactivo - PROYECTO TRANSVERSAL ASIXc
+# 📑PROYECTO TRANSVERSAL ASIXc
 
 ## 📋 Información General
 - [Introducción](#pro01---proyecto-transversal-asixc)
@@ -34,7 +32,7 @@
 - [Modelo Relacional](#2-transformación-al-modelo-relacional)
 - [Implementación](#implementación-de-la-base-de-datos)
 
-### 4. [Nuestros Servicios](#nuestros-servicios)
+### [4. 🌐 Nuestros Servicios](#nuestros-servicios)
 - [SRV1](#srv1)
   - [NGINX](#nginx)
 - [SRV2](#srv2)
