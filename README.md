@@ -489,9 +489,9 @@ ciertas características entre las que destacamos:
 
 Al tratarse de una base de datos de tamaño reducido, poco cambiante, nos limitaremos a realizar solo copias de seguridad completas semanales cada lunes que además estarán encriptadas para mayor seguridad (con GPG). Utilizaremos mysqldump para hacer las copias de seguridad. De tener mayor complejidad la base de datos nos regiríamos por el principio abuelo-padre-hijo, es decir:
 
-Abuelo (Grandfather): Copia de seguridad completa realizada una vez al mes.
-Padre (Father): Copia de seguridad diferencial realizada una vez a la semana.
-Hijo (Son): Copias incrementales realizadas diariamente.
+- Abuelo (Grandfather): Copia de seguridad completa realizada una vez al mes.
+- Padre (Father): Copia de seguridad diferencial realizada una vez a la semana.
+- Hijo (Son): Copias incrementales realizadas diariamente.
 
 Conservariamos las copias de seguridad “hijo” (diarias) durante 7 a 14 días, las copias de seguridad “padre” (semanales) durante 4 a 6 semanas y las copias de seguridad “abuelo” (mensuales) durante 12 a 24 meses.
 
