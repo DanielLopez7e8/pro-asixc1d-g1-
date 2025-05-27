@@ -953,8 +953,6 @@ Abrimos el puerto y accedemos a la consola web de Openfire:
 sudo ufw allow 9090/tcp
 ```
 
-Falta Captura
-
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3f5fc6880554e02d2113c67a1b7ca20a48372781/Images/image78.png)
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3f5fc6880554e02d2113c67a1b7ca20a48372781/Images/image140.png)
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/3f5fc6880554e02d2113c67a1b7ca20a48372781/Images/image80.png)
