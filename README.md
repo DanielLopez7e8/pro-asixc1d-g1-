@@ -35,7 +35,7 @@
 - [Implementación](#implementación-de-la-base-de-datos)
 - [NGINX](#31-ngnix)
 - 
-### 4. [NGINX](#31-ngnix
+### 4. - [NGINX](#31-ngnix)
 
 ### 🌱 5. [Sostenibilidad](#4-sostenibilidad)
 - [Eficiencia energética](#sostenibilidad-y-eficiencia-energética)
