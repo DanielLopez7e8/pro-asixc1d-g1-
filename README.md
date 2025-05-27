@@ -33,9 +33,8 @@
 - [Modelo Entidad-Relación](#1-modelo-entidad-relación-e-r)
 - [Modelo Relacional](#2-transformación-al-modelo-relacional)
 - [Implementación](#implementación-de-la-base-de-datos)
-- [NGINX](#31-ngnix)
-- 
-### 4. - [NGINX](#31-ngnix)
+  
+### 4. - [NGINX](#Instalación-de-Nginx)
 
 ### 🌱 5. [Sostenibilidad](#4-sostenibilidad)
 - [Eficiencia energética](#sostenibilidad-y-eficiencia-energética)
