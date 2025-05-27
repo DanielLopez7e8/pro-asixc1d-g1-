@@ -34,7 +34,7 @@
 - [Modelo Relacional](#2-transformación-al-modelo-relacional)
 - [Implementación](#implementación-de-la-base-de-datos)
   
-### 4. - [NGINX](#Instalación-de-Nginx)
+### 4. [NGINX](#srv1---instalación-de-nginx)
 
 ### 🌱 5. [Sostenibilidad](#4-sostenibilidad)
 - [Eficiencia energética](#sostenibilidad-y-eficiencia-energética)
@@ -471,6 +471,8 @@ tiene ciertas características:
 **¿Cuál es su función?**
 
 Se complementan entre sí, ya que ambos sistemas se encargan de vigilar el tráfico, miran los puertos, los paquetes, para poder detectar paquetes sospechosos. 
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/fa82b6ab91277ce1afe07377d329175694376850/Images/image46.png)
 
 ##### Monitorización. 
 
