@@ -41,6 +41,8 @@
   - [OpenFire](#openfire)
 - [SRV3](#srv3)
   - [Bind9](#bind9)
+  - [Segundo Servicio SFTP (Secure File Transfer Protocol)](#segundo-servicio-sftp-secure-file-transfer-protocol)
+  - [Copias de seguridad/Backups](#copias-de-seguridadbackups)
 
 ### 🌱 5. [Sostenibilidad](#4-sostenibilidad)
 - [Eficiencia energética](#sostenibilidad-y-eficiencia-energética)
@@ -494,7 +496,7 @@ ciertas características entre las que destacamos:
 - Uso: Dispone de una interfaz gráfica muy amigable, para que podamos usarla con facilidad.
 - Comunidad: Dispone de una comunidad que a día de hoy está activa, con desarrolladores de soporte y ayuda. 
 
-##### Copias de seguridad/Backups. 
+##### Copias de seguridad/Backups
 
 Al tratarse de una base de datos de tamaño reducido, poco cambiante, nos limitaremos a realizar solo copias de seguridad completas semanales cada lunes que además estarán encriptadas para mayor seguridad (con GPG). Utilizaremos mysqldump para hacer las copias de seguridad. De tener mayor complejidad la base de datos nos regiríamos por el principio abuelo-padre-hijo, es decir:
 
@@ -1076,7 +1078,7 @@ ping pt-grup1-asixcd1.itb.cat
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/281373f25304329cd1d809da02d2475a9983b673/Images/image55.png)
 
-#### Segundo Servicio SFTP (Secure FIle Transfer Protocol):
+#### Segundo Servicio SFTP (Secure File Transfer Protocol)
 
 Update y Upgrade:
 
