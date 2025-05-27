@@ -1391,32 +1391,74 @@ sudo systemctl enable icecast2
 
 El stream estará disponible en: http://3.214.255.64:8000/grup1.mp3
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image31.png)
+
 **Cómo usar el server de audio**
 		
 Guardamos el contenido en un fichero:
 ```bash
-nano play_and_stream.sh
+#!/bin/bash
+&nbsp;
+&nbsp;
+
+# Cargar módulo loopback (snd-aloop)
+echo "Cargando módulo snd-aloop..."
+sudo modprobe snd-aloop > /dev/null 2>&1
+&nbsp;
+&nbsp;
+
+# Mostrar las tarjetas de audio disponibles
+echo "Listando tarjetas de audio:"
+aplay -l
+&nbsp;
+&nbsp;
+
+# Reiniciar el servicio darkice
+echo "Reiniciando servicio darkice..."
+sudo systemctl restart darkice > /dev/null 2>&1
+&nbsp;
+&nbsp;
+
+# Ejecutar darkice con configuración explícita (en background)
+echo "Ejecutando darkice con configuración /etc/darkice.cfg..."
+sudo darkice -c /etc/darkice.cfg > /dev/null 2>&1 &
+&nbsp;
+&nbsp;
+
+# Reproducir el mp3 en bucle infinito en hw:1,0 (en background)
+echo "Reproduciendo /home/ubuntu/musica/trueno-feid.mp3 en hw:1,0 en bucle infinito..."
+mpg123 -q --loop -1 -o alsa -hw:1,0 /home/ubuntu/musica/trueno-feid.mp3 &
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image33.png)
 
 Hacemos que este fichero sea ejecutable:
 ```bash
 chmod +x play_and_stream.sh
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image10.png)
+
 Lo ejecutamos como root:
 ```bash
 sudo ./play_and_stream.sh
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image21.png)
 	
 **Hacemos una prueba**
 
 Accedemos a la web de icecast:
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image68.png)
+
 Mediante VLC al darle al botón M3U:
-![Reproducción en VLC](url_de_la_imagen)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image24.png)
 
 Desde el navegador http://3.214.255.64:8000/grup1.mp3:
-![Reproducción en navegador](url_de_la_imagen)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image31.png)
 
 ### Despliegue de servidor de vídeo con GStreamer y RTP Streaming
 
@@ -1435,15 +1477,19 @@ sudo apt install -y gstreamer1.0-tools gstreamer1.0-plugins-base \
   gstreamer1.0-plugins-ugly gstreamer1.0-libav \
   gstreamer1.0-alsa gstreamer1.0-pulseaudio \
   vnstat iftop iperf3 v4l-utils
+```
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image154.png)
 
+```bash
 # Instalación GStreamer finalizada
 # Abriendo puerto para RTP
 sudo ufw allow 5000/udp
 sudo ufw allow 5004/udp
 sudo ufw allow 22/tcp
-
 # Configuración básica finalizada
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image101.png)
 
 **Ejemplos para lanzar vídeo vía RTP:**
 1. Enviar vídeo de la webcam a un cliente por RTP (H.264):
@@ -1458,20 +1504,77 @@ gst-launch-1.0 -v udpsrc port=5000 caps=\"application/x-rtp,media=video,encoding
 
 **Cómo usar el server de vídeo**
 Guardamos el contenido en un fichero:
+
 ```bash
-nano video_stream_server.sh
+#!/bin/bash
+# Ruta del archivo de video a transmitir
+VIDEO="/home/ubuntu/video/trueno.mp4"
+&nbsp;
+&nbsp;
+
+# Configuración del servidor Icecast
+ICECAST_IP="3.214.255.64"   # Dirección IP del servidor Icecast
+ICECAST_PORT="8000"         # Puerto del servidor Icecast
+MOUNT="/video.webm"         # Punto de montaje donde se publicará el stream
+PASSWORD="sourcepass"       # Contraseña para emitir en Icecast
+&nbsp;
+&nbsp;
+
+# Esperar unos segundos para asegurarse de que el sistema esté listo
+echo "Esperando 10 segundos para la inicialización del sistema..."
+sleep 10
+&nbsp;
+&nbsp;
+
+echo "Iniciando bucle de transmisión infinita..."
+# Bucle infinito para mantener la transmisión activa continuamente
+while true; do
+    echo "Reproduciendo $VIDEO hacia $ICECAST_IP:$ICECAST_PORT$MOUNT..."
+&nbsp;
+&nbsp;
+
+    # Comando GStreamer para reproducir el video y transmitirlo a Icecast
+    gst-launch-1.0 -q \
+    filesrc location="$VIDEO" \     # Cargar el archivo de video desde el disco
+    decodebin name=dec \            # Decodificar el archivo en audio y video
+    dec. ! queue ! videoconvert \   # Convertir el video al formato compatible
+    videoscale ! video/x-raw,width=1280,height=720 ! vp8enc deadline=1 \ # Codificar el video con VP8 (formato WebM)
+    ! webmmux streamable=true name=mux \ # Multiplexar el audio y video en un contenedor WebM
+    ! shout2send mount="$MOUNT" port="$ICECAST_PORT" password="$PASSWORD" ip="$ICECAST_IP" \ 
+&nbsp;
+&nbsp;
+
+    # Procesamiento del audio
+    dec. ! queue ! audioconvert \   # Convertir el audio a un formato compatible
+    ! audioresample \                # Ajustar la frecuencia de muestreo
+    ! vorbisenc \                    # Codificar el audio con Vorbis (formato WebM)
+    ! mux.                            # Unir el audio al contenedor y redirigir salida
+&nbsp;
+&nbsp;
+
+    # Si la transmisión termina, esperar unos segundos y reiniciar
+    echo "Stream finalizado. Reiniciando en 3 segundos..."
+    sleep 3
+done
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image54.png)
+
 Hacemos que este fichero sea ejecutable:
+
 ```bash
 chmod +x video_stream_server.sh
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image54.png)
 
 Lo ejecutamos como root:
 ```bash
 sudo video_stream_server.sh
 ```
-	
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image131.png)
+
 **Hacemos una prueba**
 
 Accedemos a la web de icecast:
