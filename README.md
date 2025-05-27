@@ -480,7 +480,8 @@ tiene ciertas características:
 
 Se complementan entre sí, ya que ambos sistemas se encargan de vigilar el tráfico, miran los puertos, los paquetes, para poder detectar paquetes sospechosos. 
 
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/fa82b6ab91277ce1afe07377d329175694376850/Images/image46.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/bf96cacb6431441214ce53564aaadc9dbf47fbb8/Images/Image173.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/bf96cacb6431441214ce53564aaadc9dbf47fbb8/Images/Image174.png)
 
 ##### Monitorización. 
 
@@ -1616,7 +1617,7 @@ sudo apt update
 sudo apt install -y iperf3
 ```
 
-Falta Captura
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/bf96cacb6431441214ce53564aaadc9dbf47fbb8/Images/Image175.png)
 
 Para hacer la prueba al servidor (receptor):
 
