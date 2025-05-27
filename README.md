@@ -964,16 +964,16 @@ Nos conectamos a la consola y accedemos con el usuario:
 
 Creamos los usuarios:
 
-Biel:
+Biel: <br>
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image117.png)
 
-Giuseppe:
+Giuseppe: <br>
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image29.png)
 
-Bryan:
+Bryan: <br>
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image66.png)
 
-Dani:
+Dani: <br>
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image1.png)
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image109.png)
