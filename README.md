@@ -1988,6 +1988,18 @@ Alineándonos con nuestros valores empresariales y los ODS, es fundamental para 
 | 15 | Vida de ecosistemas terrestres | • Integración arquitectónica y mínima fragmentación en zona de alto valor ecológico.<br>• Muros verdes para biodiversidad. |
 | 16 | Paz, justicia e instituciones sólidas | • Captura de pantalla del JSON de políticas IAM en AWS con roles y permisos granulares.<br> • Extracto de CloudTrail mostrando auditoría de eventos críticos (creación/elim. de instancias).<br>• Documento PDF del Plan de Continuidad de Negocio con procedimientos de recuperación.<br>• Log de ejecución del script de backup/restauración automatizado (cron).|
 
+### Huella de carbono limpia:
+**Emisiones netas anuales:** 63.144 kg CO₂ - 11.402 kg CO₂ = 51.742 kg CO₂
+
+| Concepto                          | Cálculo                                | Resultado          |
+|-----------------------------------|----------------------------------------|--------------------|
+| Emisiones brutas del CPD          | 273.312 kWh × 0,231                    | 63.144 kg CO₂      |
+| Generación solar (100 m², 30 kWp) | —                                      | 49.380 kWh/año     |
+| Porcentaje energía renovable      | (49.380 / 273.312) × 100               | 18,1 %             |
+| Emisiones evitadas                | 49.380 × 0,231                         | 11.402 kg CO₂      |
+| Emisiones netas (huella limpia)   | 63.144 - 11.402                        | 51.742 kg CO₂      |
+
+
 **Estimación de la Huella de Carbono de la infraestructura en AWS:**
 - Basado en el despliegue de 2 instancias EC2 t2.large y 1 t2.medium, con servicios de streaming (RTMP, Nginx, OpenFire, FTP, MySQL), más CDN (CloudFront) y almacenamiento (S3/Glacier):
 
@@ -1997,6 +2009,15 @@ Alineándonos con nuestros valores empresariales y los ODS, es fundamental para 
 | Tráfico de red (streaming 1080p @ 5 Mbps, 50 usuarios simultáneos) | 98.550 kWh | 0,10 | 9.855 kg CO₂ |
 | Total AWS                                  | 98.979 kWh             | —                             | 9.897,9 kg CO₂                   |
 
+El tráfico de red representa más del 99 % de la huella de carbono estimada para esta infraestructura.
+
+### Observaciones clave
+
+- Migrar parte del servicio a AWS, especialmente si se seleccionan regiones como `eu-north-1` (Suecia), donde AWS opera con energía 100 % renovable, puede disminuir significativamente las emisiones (hasta 90 % menos que el CPD tradicional).
+
+- El uso de CloudFront (CDN) ayuda a distribuir contenido de forma más eficiente, reduciendo latencia y emisiones por distancia recorrida.
+
+- La huella del CPD físico sigue siendo considerable pese al autoconsumo solar, aunque la instalación fotovoltaica evita unas 11 toneladas de CO₂ al año.
 
 De este modo, el CPD no solo minimiza su huella de carbono y optimiza recursos, sino que también aborda de forma integrada múltiples metas de la Agenda 2030, garantizando sostenibilidad ambiental, innovación tecnológica y resiliencia.
 
