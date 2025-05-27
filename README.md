@@ -1566,24 +1566,28 @@ Hacemos que este fichero sea ejecutable:
 chmod +x video_stream_server.sh
 ```
 
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image54.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image131.png)
 
 Lo ejecutamos como root:
 ```bash
-sudo video_stream_server.sh
+ ./video_stream_server.sh
 ```
 
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7b52833692ea6023099af4662456dd902bf340fa/Images/image131.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image7.png)
 
 **Hacemos una prueba**
 
 Accedemos a la web de icecast:
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image144.png)
+
 Mediante VLC al darle al botón M3U:
-![Reproducción de video en VLC](url_de_la_imagen)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image30.png)
 
 Desde el navegador 3.214.255.64:8000/video.webm:
-![Reproducción de video en navegador](url_de_la_imagen)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image133.png)
 
 **Comprobación del ancho de banda con iperf3**
 Instalación:
@@ -1592,10 +1596,15 @@ sudo apt update
 sudo apt install -y iperf3
 ```
 
+Falta Captura
+
 Para hacer la prueba al servidor (receptor):
+
 ```bash
 iperf3 -s
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image160.png)
 
 Salida esperada: Server listening on 5201
 
@@ -1612,10 +1621,12 @@ Connecting to host IP_SERVIDOR, port 5201
 ```
 
 Desde un cliente de VirtualBox instalamos el paquete de iperf3, de igual manera lo instalamos en el servidor, ejecutamos en el servidor `iperf3 -s` y nos muestra el ancho de banda en nuestro cliente:
-![Resultado iperf3 cliente](url_de_la_imagen)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image92.png)
 
 En el servidor nos aparecerá esto, con la IP pública del cliente y el puerto utilizado:
-![Resultado iperf3 servidor](url_de_la_imagen)
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image17.png)
 
 ## 3. Diseño e implementación de una base de datos 
 Se trata de diseñar e implementar una base de datos para la gestión del personal de la empresa. Los requisitos que se piden son los siguientes: 
@@ -1631,6 +1642,8 @@ https://cido.diba.cat/convenis_collectius/9042/empresas-de-consultoria-y-estudio
 Se pide hacer el diseño entidad-relación, la transformación a relacional y la implementación en un Sistema Gestor de Bases de Datos (MySQL, Oracle, etc.) con la introducción de un número significativo de datos.
 
 Área 2 del convenio, contiene la siguiente información relevante en cuanto a salarios, crearemos un empleado de cada grupo nivel con estas características, tomamos solo el valor de total:
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image143.png)
 
 Con relación al periodo de prueba y vacaciones:
 
@@ -1677,6 +1690,8 @@ Incapacidades: Si coinciden con baja por embarazo, parto, lactancia o permisos d
 - Un empleado pertenece a un Departamento.
 - Un Empleado está asignado a un GrupoNivel.
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image157.png)
+
 ### 2. Transformación al Modelo Relacional
 **Tablas y Claves**
 
@@ -1700,6 +1715,8 @@ Incapacidades: Si coinciden con baja por embarazo, parto, lactancia o permisos d
 - PeriodoPrueba: INT
 - DiasVacaciones: INT
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image16.png)
+
 ### IMPLEMENTACIÓN DE LA BASE DE DATOS:
 
 Actualizamos los paquetes de nuestro servidor (SRV2):
@@ -1709,11 +1726,15 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image100.png)
+
 Instalación de MySQL:
 
 ```bash
 sudo apt install mysql-server -y
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image26.png)
 
 Revisamos que los servicios estén funcionando correctamente:
 
@@ -1721,11 +1742,15 @@ Revisamos que los servicios estén funcionando correctamente:
 sudo systemctl status mysql
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image27.png)
+
 Configuración de la BD en modo seguro:
 
 ```bash
 sudo mysql_secure_installation
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image36.png)
 
 Creamos la base de datos llamada BD_Transversal:
 
@@ -1733,11 +1758,15 @@ Creamos la base de datos llamada BD_Transversal:
 CREATE DATABASE BD_Transversal;
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image59.png)
+
 Seleccionamos la Base de Datos creada:
 ```sql
 USE BD_Transversal;
 ```
-		
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image39.png)
+  
 Creamos las tablas, en este caso Departamento:
 ```sql
 CREATE TABLE Departamento (
@@ -1746,6 +1775,8 @@ CREATE TABLE Departamento (
     Teléfono VARCHAR(15)
 );
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image86.png)
 
 Ahora creamos la tabla de GrupoNivel:
 ```sql
@@ -1756,6 +1787,8 @@ CREATE TABLE GrupoNivel (
     DiasVacaciones INT NOT NULL
 );
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image168.png)
 
 Y seguimos con la tabla de Empleado:
 ```sql
@@ -1772,6 +1805,8 @@ CREATE TABLE Empleado (
 );
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image163.png)
+
 Insertamos los datos a la tabla de Departamento:
 ```sql
 INSERT INTO Departamento (CódigoDepartamento, Nombre, Teléfono) VALUES
@@ -1781,6 +1816,8 @@ INSERT INTO Departamento (CódigoDepartamento, Nombre, Teléfono) VALUES
 ('DEP004', 'Finanzas', '932123459'),
 ('DEP005', 'Operaciones', '932123460');
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image69.png)
  
 Y aquí añadimos los datos a la tabla de GrupoNivel:
 ```sql
@@ -1797,6 +1834,8 @@ INSERT INTO GrupoNivel (CódigoGrupoNivel, SalarioTotal, PeriodoPrueba, DiasVaca
 ('E2', 12000.00, 3, 23);
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image14.png)
+
 Y para finalizar insertamos los datos a la tabla Empleado:
 ```sql
 INSERT INTO Empleado (DNI, Nombre, Apellidos, Dirección, Teléfono, CódigoDepartamento, CódigoGrupoNivel) VALUES
@@ -1812,36 +1851,94 @@ INSERT INTO Empleado (DNI, Nombre, Apellidos, Dirección, Teléfono, CódigoDepa
 ('10101010J', 'David', 'Serrano Gil', 'Paseo Marítimo 45, Barcelona', '610101010', 'DEP005', 'E2');
 ```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image32.png)
+
 Vemos que estén creados con select:
 ```sql
 SELECT * FROM Empleado;
-SELECT * FROM Departamento;
-SELECT * FROM GrupoNivel;
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image126.png)
 
 Creamos los usuarios y le damos los permisos:
 ```sql
-CREATE USER 'admin'@'%' IDENTIFIED BY 'admin123';
-GRANT ALL PRIVILEGES ON BD_Transversal.* TO 'admin'@'%';
+mysql> CREATE USER 'sofia'@'%' IDENTIFIED BY 'Sofia2025!';
+Query OK, 0 rows affected (0.01 sec)
+&nbsp;
+&nbsp;
 
-CREATE USER 'developer'@'%' IDENTIFIED BY 'dev123';
-GRANT SELECT, INSERT, UPDATE ON BD_Transversal.* TO 'developer'@'%';
+mysql> GRANT SELECT, INSERT, UPDATE, DELETE ON BD_Transversal.Empleado TO 'sofia'@'%';
+Query OK, 0 rows affected (0.01 sec)
+&nbsp;
+&nbsp;
 
-CREATE USER 'viewer'@'%' IDENTIFIED BY 'view123';
-GRANT SELECT ON BD_Transversal.* TO 'viewer'@'%';
+mysql> CREATE USER 'miguel'@'%' IDENTIFIED BY 'Migu3l2025!';
+Query OK, 0 rows affected (0.02 sec)
+&nbsp;
+&nbsp;
 
-FLUSH PRIVILEGES;
+mysql> GRANT SELECT, INSERT, UPDATE ON BD_Transversal.Empleado TO 'miguel'@'%';
+Query OK, 0 rows affected (0.01 sec)
+&nbsp;
+&nbsp;
+
+mysql> CREATE USER 'elena'@'%' IDENTIFIED BY 'El3na2025!';
+Query OK, 0 rows affected (0.01 sec)
+&nbsp;
+&nbsp;
+
+mysql> GRANT SELECT ON BD_Transversal.Empleado TO 'elena'@'%';
+Query OK, 0 rows affected (0.01 sec)
+&nbsp;
+&nbsp;
+
+mysql> CREATE USER 'raul'@'%' IDENTIFIED BY 'Raul2025!';
+Query OK, 0 rows affected (0.01 sec)
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image126.png)
+
+Permisos
+```bash
+mysql> GRANT SELECT (Nombre, Apellidos, CodigoGrupoNivel) ON BD_Transversal.Empleado TO 'raul'@'%';
+Query OK, 0 rows affected (0.01 sec)
+&nbsp;
+&nbsp;
+
+mysql> CREATE USER 'joel'@'%' IDENTIFIED BY 'J03l2025!';
+Query OK, 0 rows affected (0.01 sec)
+&nbsp;
+&nbsp;
+
+mysql> GRANT SELECT ON BD_Transversal.Empleado TO 'joel'@'%';
+Query OK, 0 rows affected (0.01 sec)
+&nbsp;
+&nbsp;
+
+mysql> FLUSH PRIVILEGES;
+Query OK, 0 rows affected (0.01 sec)
+&nbsp;
+&nbsp;
+
+mysql>
+```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image19.png)
 
 Accedemos a la BD:
+
 ```bash
-mysql -u admin -p
+mysql -h 52.200.122.76 -P 3306 -u sofia -p
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image146.png)
 
 Prueba desde un ordenador cliente de fuera de la red:
 ```bash
-mysql -h SERVER_IP -u viewer -p
+mysql -h 52.200.122.76 -P 3306 -u sofia -p
 ```
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image44.png)
 
 ## 3.1 NGNIX
 
@@ -1873,6 +1970,7 @@ Alineándonos con nuestros valores empresariales y los ODS, es fundamental para 
 | 13 | Acción por el clima | • Reducción de emisiones operativas a 24,2 t CO₂eq/año; compensable con 0,86 ha forestal.<br>• Reutilización de calor residual. |
 | 6 | Agua limpia y saneamiento | • Captación y uso de aguas pluviales para climatización indirecta.<br>• Filtrado y canalización de aguas en muros verdes. |
 | 15 | Vida de ecosistemas terrestres | • Integración arquitectónica y mínima fragmentación en zona de alto valor ecológico.<br>• Muros verdes para biodiversidad. |
+| 16 | Paz, justicia e instituciones sólidas | • Captura de pantalla del JSON de políticas IAM en AWS con roles y permisos granulares..<br> • • Extracto de CloudTrail mostrando auditoría de eventos críticos (creación/elim. de instancias).• Documento PDF del Plan de Continuidad de Negocio con procedimientos de recuperación.• Log de ejecución del script de backup/restauración automatizado (cron).|
 
 De este modo, el CPD no solo minimiza su huella de carbono y optimiza recursos, sino que también aborda de forma integrada múltiples metas de la Agenda 2030, garantizando sostenibilidad ambiental, innovación tecnológica y resiliencia.
 
