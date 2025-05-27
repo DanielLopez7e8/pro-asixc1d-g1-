@@ -2018,6 +2018,18 @@ El tráfico de red representa más del 99 % de la huella de carbono estimada par
 - El uso de CloudFront (CDN) ayuda a distribuir contenido de forma más eficiente, reduciendo latencia y emisiones por distancia recorrida.
 
 - La huella del CPD físico sigue siendo considerable pese al autoconsumo solar, aunque la instalación fotovoltaica evita unas 11 toneladas de CO₂ al año.
+  
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f301adbe832b1ba77c5f4c02006056075e98c847/Images/Grafica.png)
+
+### El gráfico muestra:
+
+- El gran impacto del CPD físico (63.144 kg brutos), frente a la menor huella de las soluciones en la nube (AWS EC2 y especialmente streaming).
+
+- La contribución significativa de la energía solar en el CPD, que reduce más de 11.000 kg de CO₂ anuales.
+
+- Una comparación directa entre los modelos cloud y on-premise (neto vs. bruto).
+
+- Cumplimiento de los Objetivos de la Agenda 2030:
 
 De este modo, el CPD no solo minimiza su huella de carbono y optimiza recursos, sino que también aborda de forma integrada múltiples metas de la Agenda 2030, garantizando sostenibilidad ambiental, innovación tecnológica y resiliencia.
 
