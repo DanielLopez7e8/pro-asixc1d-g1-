@@ -1970,7 +1970,7 @@ Alineándonos con nuestros valores empresariales y los ODS, es fundamental para 
 | 13 | Acción por el clima | • Reducción de emisiones operativas a 24,2 t CO₂eq/año; compensable con 0,86 ha forestal.<br>• Reutilización de calor residual. |
 | 6 | Agua limpia y saneamiento | • Captación y uso de aguas pluviales para climatización indirecta.<br>• Filtrado y canalización de aguas en muros verdes. |
 | 15 | Vida de ecosistemas terrestres | • Integración arquitectónica y mínima fragmentación en zona de alto valor ecológico.<br>• Muros verdes para biodiversidad. |
-| 16 | Paz, justicia e instituciones sólidas | • Captura de pantalla del JSON de políticas IAM en AWS con roles y permisos granulares..<br> • Extracto de CloudTrail mostrando auditoría de eventos críticos (creación/elim. de instancias).<br>• Documento PDF del Plan de Continuidad de Negocio con procedimientos de recuperación.<br>• Log de ejecución del script de backup/restauración automatizado (cron).|
+| 16 | Paz, justicia e instituciones sólidas | • Captura de pantalla del JSON de políticas IAM en AWS con roles y permisos granulares.<br> • Extracto de CloudTrail mostrando auditoría de eventos críticos (creación/elim. de instancias).<br>• Documento PDF del Plan de Continuidad de Negocio con procedimientos de recuperación.<br>• Log de ejecución del script de backup/restauración automatizado (cron).|
 
 De este modo, el CPD no solo minimiza su huella de carbono y optimiza recursos, sino que también aborda de forma integrada múltiples metas de la Agenda 2030, garantizando sostenibilidad ambiental, innovación tecnológica y resiliencia.
 
@@ -1991,6 +1991,9 @@ De este modo, el CPD no solo minimiza su huella de carbono y optimiza recursos, 
 - https://www.carbontrust.com/
 - Factores medios globales o por región del proveedor cloud.
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/893027ef5c59721779db8bd05e6f57cd28886428/Images/image82.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/893027ef5c59721779db8bd05e6f57cd28886428/Images/image142.png)
+
 **3- Propuesta de medidas de reducción u optimización, por ejemplo:**
 - ¿Reducir horas de funcionamiento?
 - ¿Utilizar servicios con energía renovable?
@@ -2009,8 +2012,12 @@ De este modo, el CPD no solo minimiza su huella de carbono y optimiza recursos, 
    d. Interacción y respuesta a las preguntas al respecto.
 4. Enlace publicado en GitHub del documento en Markdown con la recopilación de evidencias de todos los apartados y las respuestas teóricas justificadas
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/893027ef5c59721779db8bd05e6f57cd28886428/Images/image130.png)
+
 ## Rúbricas 
 ### Evaluación Proyecto transversal: 
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/893027ef5c59721779db8bd05e6f57cd28886428/Images/image125.png)
 
 #### Bloque 0371 Fundamentos de maquinaria: 
 **PUNTO DE CONTROL - RA4**
