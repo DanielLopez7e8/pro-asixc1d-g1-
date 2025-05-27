@@ -1655,7 +1655,7 @@ Se trata de diseñar e implementar una base de datos para la gestión del person
 
 **Convenio colectivo estatal de empresas de consultoría, tecnologías de la información y estudios de mercado y de la opinión pública. : [BOE-A-2025-7766](https://www.boe.es/boe/dias/2025/04/16/pdfs/BOE-A-2025-7766.pdf) para más detalles.**
 
-Se pide hacer el diseño entidad-relación, la transformación a relacional y la implementación en un Sistema Gestor de Bases de Datos (MySQL, Oracle, etc.) con la introducción de un número significativo de datos.**
+Se pide hacer el diseño entidad-relación, la transformación a relacional y la implementación en un Sistema Gestor de Bases de Datos (MySQL, Oracle, etc.) con la introducción de un número significativo de datos.
 
 Área 2 del convenio, contiene la siguiente información relevante en cuanto a salarios, crearemos un empleado de cada grupo nivel con estas características, tomamos solo el valor de total:
 
