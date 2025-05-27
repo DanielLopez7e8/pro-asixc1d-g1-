@@ -39,6 +39,8 @@
   - [NGINX](#nginx)
 - [SRV2](#srv2)
   - [OpenFire](#openfire)
+- [SRV3](#srv3)
+  - [Bind9](#bind9)
 
 ### 🌱 5. [Sostenibilidad](#4-sostenibilidad)
 - [Eficiencia energética](#sostenibilidad-y-eficiencia-energética)
@@ -986,7 +988,10 @@ Comprobamos desde los clientes el correcto funcionamiento:
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image81.png)
 
-#### SRV3 - Bind9
+### SRV3
+
+#### Bind9
+
 Instalamos el bind9:
 
 ```bash
