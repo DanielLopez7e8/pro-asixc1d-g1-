@@ -1335,112 +1335,55 @@ sudo tee /etc/darkice.cfg > /dev/null
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/95b2a47a8b98e8301f11992f51698fc925c42128/Images/image97.png)
 
+Configuración de /etc/darkice.cfg
+
 ```bash
-<icecast>
-	<location>Servidor Icecast</location>
-	<admin>admin@tudominio.com</admin>
-
-	<limits>
-    	<clients>100</clients>
-    	<sources>2</sources>
-    	<threadpool>5</threadpool>
-    	<queue-size>524288</queue-size>
-    	<client-timeout>30</client-timeout>
-    	<header-timeout>15</header-timeout>
-    	<source-timeout>10</source-timeout>
-	</limits>
-
-	<authentication>
-    	<!-- Contraseña para el encoder (ej. BUTT) -->
-    	<source-password>sourcepass</source-password>
-
-    	<!-- Usuario y contraseña del panel web -->
-    	<admin-user>admin</admin-user>
-    	<admin-password>adminpass</admin-password>
-	</authentication>
-
-	<!-- Cambia esto por tu IP pública o dominio si se accede desde fuera -->
-	<hostname>localhost</hostname>
-
-	<!-- Cambio de usuario: evita ejecutar como root -->
-	<changeowner>
-    	<user>icecast2</user>
-    	<group>icecast</group>
-	</changeowner>
-
-	<!-- Puerto principal -->
-	<listen-socket>
-    	<port>8000</port>
-	</listen-socket>
-
-	<!-- Punto de montaje para tu transmisión -->
-	<mount>
-    	<mount-name>/grup1.mp3</mount-name>
-
-    	<!-- Puedes personalizar el título que aparecerá -->
-    	<stream-name>Mi Radio Online</stream-name>
-    	<stream-description>Transmisión en vivo con Icecast</stream-description>
-    	<stream-url>http://localhost:8000</stream-url>
-    	<genre>Variado</genre>
-
-    	<!-- Mostrar este mount en la página de estado -->
-    	<public>1</public>
-	</mount>
-
-	<!-- Directorios de logs -->
-	<paths>
-    	<basedir>/usr/share/icecast2</basedir>
-    	<logdir>/var/log/icecast2</logdir>
-    	<webroot>/usr/share/icecast2/web</webroot>
-    	<adminroot>/usr/share/icecast2/admin</adminroot>
-    	<pidfile>/run/icecast2/icecast.pid</pidfile>
-    	<alias source="/" destination="/status.xsl"/>
-	</paths>
-
-	<logging>
-    	<accesslog>access.log</accesslog>
-    	<errorlog>error.log</errorlog>
-    	<loglevel>3</loglevel> <!-- 4=debug, 3=info, 2=warn, 1=error -->
-    	<logsize>10000</logsize>
-	</logging>
-
-	<security>
-    	<chroot>0</chroot>
-	</security>
-</icecast>
-EOF
-
-# Configuración DarkIce
-sudo tee /etc/darkice.cfg > /dev/null << 'EOF'
 [general]
-duration        = 0
-bufferSecs      = 5
-reconnect       = yes
+duration         = 0
+bufferSecs       = 5
+reconnect        = yes
+&nbsp;
+&nbsp;
 
 [input]
-device          = default
-sampleRate      = 44100
-bitsPerSample   = 16
-channel         = 2
+device           = hw:1,1
+sampleRate       = 44100
+bitsPerSample    = 16
+channel          = 2
+&nbsp;
+&nbsp;
 
 [icecast2-0]
-bitrateMode     = vbr
-bitrate         = 128
-server          = localhost
-port            = 8000
-password        = sourcepass
-mountPoint      = live.mp3
-name            = Stream d'àudio
-EOF
+bitrateMode      = cbr
+format           = mp3
+quality          = 1.0
+bitrate          = 128
+server           = localhost
+port             = 8000
+password         = sourcepass
+mountPoint       = grup1.mp3
+name             = Stream d'audio
+```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/629085df39d62b855c050506a1d5f0432d899342/Images/image49.png)
+
+```bash
 # Abrimos los puertos del firewall
 sudo ufw allow 8000/tcp
 sudo ufw allow 22/tcp
+```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/629085df39d62b855c050506a1d5f0432d899342/Images/image165.png)
+
+```bash
 # Iniciamos los servicios
 sudo systemctl restart icecast2
 sudo systemctl enable icecast2
+```
 
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/629085df39d62b855c050506a1d5f0432d899342/Images/image113.png)
+
+```bash
 # Icecast2 en funcionamiento
 # Para iniciar la emisión de audio con DarkIce, ejecuta
 # sudo darkice
