@@ -1975,19 +1975,6 @@ Alineándonos con nuestros valores empresariales y los ODS, es fundamental para 
 **Huella de carbono limpia:**
 - Emisiones netas anuales: 63.144 kg CO₂ - 11.402 kg CO₂ = 51.742 kg CO₂
 
-**Cumplimiento de los Objetivos de la Agenda 2030:**
-
-| ODS | Descripción | Evidencia en el proyecto |
-|-----|-------------|--------------------------|
-| 7 | Energía asequible y no contaminante | • Cubierta fotovoltaica (30 kWp) aporta 18,1 % de la energía necesaria.<br>• Estrategias pasivas (free-cooling, geotermia). |
-| 9 | Industria, innovación e infraestructura | • Diseño de CPD de alta eficiencia y automatización 24/7.<br>• Sistemas de monitorización avanzada (Zabbix, VESDA). |
-| 11 | Ciudades y comunidades sostenibles | • Integración paisajística en Collserola (cubierta ajardinada).<br>• Gestión de aguas pluviales para climatización y riego. |
-| 12 | Producción y consumo responsables | • Materiales ecológicos (aislamiento de fibra de madera, pinturas sin COV).<br>• Iluminación LED con sensores de presencia. |
-| 13 | Acción por el clima | • Reducción de emisiones operativas a 24,2 t CO₂eq/año; compensable con 0,86 ha forestal.<br>• Reutilización de calor residual. |
-| 6 | Agua limpia y saneamiento | • Captación y uso de aguas pluviales para climatización indirecta.<br>• Filtrado y canalización de aguas en muros verdes. |
-| 15 | Vida de ecosistemas terrestres | • Integración arquitectónica y mínima fragmentación en zona de alto valor ecológico.<br>• Muros verdes para biodiversidad. |
-| 16 | Paz, justicia e instituciones sólidas | • Captura de pantalla del JSON de políticas IAM en AWS con roles y permisos granulares.<br> • Extracto de CloudTrail mostrando auditoría de eventos críticos (creación/elim. de instancias).<br>• Documento PDF del Plan de Continuidad de Negocio con procedimientos de recuperación.<br>• Log de ejecución del script de backup/restauración automatizado (cron).|
-
 ### Huella de carbono limpia:
 **Emisiones netas anuales:** 63.144 kg CO₂ - 11.402 kg CO₂ = 51.742 kg CO₂
 
@@ -2030,6 +2017,19 @@ El tráfico de red representa más del 99 % de la huella de carbono estimada par
 - Una comparación directa entre los modelos cloud y on-premise (neto vs. bruto).
 
 - Cumplimiento de los Objetivos de la Agenda 2030:
+
+**Cumplimiento de los Objetivos de la Agenda 2030:**
+
+| ODS | Descripción | Evidencia en el proyecto |
+|-----|-------------|--------------------------|
+| 7 | Energía asequible y no contaminante | • Cubierta fotovoltaica (30 kWp) aporta 18,1 % de la energía necesaria.<br>• Estrategias pasivas (free-cooling, geotermia). |
+| 9 | Industria, innovación e infraestructura | • Diseño de CPD de alta eficiencia y automatización 24/7.<br>• Sistemas de monitorización avanzada (Zabbix, VESDA). |
+| 11 | Ciudades y comunidades sostenibles | • Integración paisajística en Collserola (cubierta ajardinada).<br>• Gestión de aguas pluviales para climatización y riego. |
+| 12 | Producción y consumo responsables | • Materiales ecológicos (aislamiento de fibra de madera, pinturas sin COV).<br>• Iluminación LED con sensores de presencia. |
+| 13 | Acción por el clima | • Reducción de emisiones operativas a 24,2 t CO₂eq/año; compensable con 0,86 ha forestal.<br>• Reutilización de calor residual. |
+| 6 | Agua limpia y saneamiento | • Captación y uso de aguas pluviales para climatización indirecta.<br>• Filtrado y canalización de aguas en muros verdes. |
+| 15 | Vida de ecosistemas terrestres | • Integración arquitectónica y mínima fragmentación en zona de alto valor ecológico.<br>• Muros verdes para biodiversidad. |
+| 16 | Paz, justicia e instituciones sólidas | • Captura de pantalla del JSON de políticas IAM en AWS con roles y permisos granulares.<br> • Extracto de CloudTrail mostrando auditoría de eventos críticos (creación/elim. de instancias).<br>• Documento PDF del Plan de Continuidad de Negocio con procedimientos de recuperación.<br>• Log de ejecución del script de backup/restauración automatizado (cron).|
 
 De este modo, el CPD no solo minimiza su huella de carbono y optimiza recursos, sino que también aborda de forma integrada múltiples metas de la Agenda 2030, garantizando sostenibilidad ambiental, innovación tecnológica y resiliencia.
 
