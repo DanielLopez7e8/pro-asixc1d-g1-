@@ -1972,9 +1972,6 @@ Alineándonos con nuestros valores empresariales y los ODS, es fundamental para 
 - Porcentaje de energía renovable utilizada: (49.380 kWh / 273.312 kWh) × 100 = 18,1%
 - Emisiones evitadas gracias a la energía solar: 49.380 kWh × 0,231 kg CO₂/kWh = 11.402 kg CO₂
 
-**Huella de carbono limpia:**
-- Emisiones netas anuales: 63.144 kg CO₂ - 11.402 kg CO₂ = 51.742 kg CO₂
-
 ### Huella de carbono limpia:
 **Emisiones netas anuales:** 63.144 kg CO₂ - 11.402 kg CO₂ = 51.742 kg CO₂
 
