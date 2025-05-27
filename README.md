@@ -34,8 +34,9 @@
 - [Modelo Relacional](#2-transformación-al-modelo-relacional)
 - [Implementación](#implementación-de-la-base-de-datos)
 
-### 4. [NGINX](#srv1---instalación-de-nginx)
-### 5. [OpenFire](#srv2---openfire)
+### 4. [Nuestros Servicios](#nuestros-servicios)
+- [NGINX](#srv1---instalación-de-nginx)
+- [OpenFire](#srv2---openfire)
 
 ### 🌱 5. [Sostenibilidad](#4-sostenibilidad)
 - [Eficiencia energética](#sostenibilidad-y-eficiencia-energética)
@@ -690,6 +691,8 @@ A continuación mostramos el cálculo estimado de costes para implementar nuestr
 | **Total Aproximado** | **410.650 €** |
 
 ### Implementación del CPD a la nube AWS con los servicios utilizados (mínimo de 4 - el servicios de audio, video y bases de datos se valoran en los otros bloques).
+
+## Nuestros Servicios
 
 #### SRV1 - Instalación de Nginx
 
