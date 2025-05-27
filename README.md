@@ -35,10 +35,10 @@
 - [Implementación](#implementación-de-la-base-de-datos)
 
 ### 4. [Nuestros Servicios](#nuestros-servicios)
-SRV1:
-- [NGINX](#srv1---instalación-de-nginx)
-SRV2:
-- [OpenFire](#srv2---openfire)
+- [SRV1](#srv1)
+  - [NGINX](#nginx)
+- [SRV2](#srv2)
+  - [OpenFire](#openfire)
 
 ### 🌱 5. [Sostenibilidad](#4-sostenibilidad)
 - [Eficiencia energética](#sostenibilidad-y-eficiencia-energética)
@@ -696,7 +696,9 @@ A continuación mostramos el cálculo estimado de costes para implementar nuestr
 
 ## Nuestros Servicios
 
-#### SRV1 - Instalación de Nginx
+### SRV1
+
+#### NGINX
 
 Primero actualizamos los paquetes de la máquina:
 
@@ -897,7 +899,9 @@ Estadísticas del servidor (GoAccess):
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image90.png)
 
-#### SRV2 - OPENFIRE
+### SRV2
+
+#### OpenFire
 
 Primero haremos un apt update y upgrade:
 
