@@ -143,36 +143,36 @@ La ubicación privilegiada del CPD se debe a distintos factores para poder asegu
 **Materiales y recubrimientos:**
 - Aislamiento a base de fibra de madera y pinturas ecológicas sin COV.
   
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image35.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image35.png)
   
 - Muros verdes en el exterior para reducir la temperatura ambiente y favorecer el aislamiento térmico y el filtraje y canalización de aguas pluviales.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image115.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image115.png)
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image139.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image139.png)
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image123.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image123.png)
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image47.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image47.png)
   
 - Gestión de aguas: Sistema de recogida de aguas pluviales para climatización indirecta y uso general.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image2.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image2.png)
   
 **Dimensiones y accesos:**
 - Pasillos con ancho mínimo de 2 m.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image158.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image158.png)
 
 - Iluminación LED inteligente con sensores de presencia.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image11.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image11.png)
 
 #### 2. Sistemas de Climatización y Eficiencia Energética
 **2.1 Climatización Activa**
 - Unidad CRAC: Aire acondicionado de precisión (Computer Room Air Conditioner) de 30 kW con soporte geométrico.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image60.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image60.png)
 
 **Rangos operativos:**
 - Temperatura: 20 °C – 22 °C (media entre 20 °C y 23 °C).
@@ -184,32 +184,32 @@ La ubicación privilegiada del CPD se debe a distintos factores para poder asegu
 **2.2 Climatización Pasiva y Geotermia**
 - Free Cooling: Ventilación cruzada cuando la temperatura externa sea < 18 °C.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image15.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image15.png)
 
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image156.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image156.png)
 
 - Túneles subterráneos: Aprovechamiento del aire fresco de túneles con compuertas inteligentes y sensores climáticos.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image56.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image56.png)
   
 - Geotermia: Pozos verticales de 100 m de profundidad para refrigeración base.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image34.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image34.png)
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image135.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image135.png)
 
 **2.3 Reutilización de Calor Residual**
 - El calor generado por los servidores se canalizará para calefacción de oficinas y agua sanitaria mediante recuperación térmica.
 - En invierno, se integrará con el sistema de radiadores del edificio.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image107.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/cda8835b4fc2dd518f3d37273f71f294dc529b64/Images/image107.png)
 
 **2.4 Eficiencia Energética**
 - Funcionamiento 24/7 optimizado para bajo consumo sin perder potencia.
 - Cubierta solar fotovoltaica de 100 m² con potencia estimada de 30 kWp.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image61.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image61.png)
 
 #### 3. Seguridad y Discreción
 **Dificultad de identificación:**
@@ -230,13 +230,13 @@ La ubicación privilegiada del CPD se debe a distintos factores para poder asegu
 - Aglomerado revestido con lámina de PVC o HPL resistente al fuego.
 - Cubierta: Vinilo antiestático o conductivo.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image137.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image137.png)
 
 **4.2 Techo Técnico**
 - Modelo: Bergvik Iso Floor (diseño flexible y alta estabilidad estructural).
 - Conductos modulares de ventilación intégrés para flujo de aire controlado.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image37.png).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image37.png)
 
 #### 5. Distribución y Gestión del Cableado
 - Estructura: Bandejas superiores con dos canales separados para datos y alimentación.
@@ -244,7 +244,7 @@ La ubicación privilegiada del CPD se debe a distintos factores para poder asegu
 - Cableado de alimentación: Con protección contra subidas y bajadas de tensión.
 - Etiquetado: Identificación individual de cada cable para facilitar mantenimiento y reparaciones.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image88.jpg).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image88.jpg)
 
 #### 6. Estructuración de Racks
 Se dispondrá de 3 racks idénticos de 42U, 600 mm de ancho y 800 mm de profundidad, color negro, con puertas frontales de cristal templado y traseras de chapa ciega reforzada.
@@ -261,7 +261,7 @@ Se dispondrá de 3 racks idénticos de 42U, 600 mm de ancho y 800 mm de profundi
 #### 7. Planos y Diagramas
 Se incluirán planos arquitectónicos detallados y diagramas de flujo de aire, distribución de racks y cableado en formato CAD y PDF para su revisión y validación.
 
-  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image8.jpg).
+  ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/8b6d779db8b4db6d436a2da7355c8be84cc55a6a/Images/image8.jpg)
 
 ### Infraestructura IT: 
 #### Servidores: Número y tipo de modelo. 
