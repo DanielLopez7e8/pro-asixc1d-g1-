@@ -1764,8 +1764,7 @@ Incapacidades: Si coinciden con baja por embarazo, parto, lactancia o permisos d
 Actualizamos los paquetes de nuestro servidor (SRV2):
 
 ```bash
-sudo apt update
-sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image100.png)
@@ -1925,8 +1924,6 @@ Query OK, 0 rows affected (0.01 sec)
 mysql> CREATE USER 'raul'@'%' IDENTIFIED BY 'Raul2025!';
 Query OK, 0 rows affected (0.01 sec)
 ```
-
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image126.png)
 
 Permisos
 ```bash
