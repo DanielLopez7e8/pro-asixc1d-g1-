@@ -1330,7 +1330,7 @@ sudo sed -i 's/ENABLE=false/ENABLE=true/' /etc/default/icecast2
 
 ```bash
 # Configuración básica para /etc/icecast2/icecast.xml
-sudo tee /etc/icecast2/icecast.xml > /dev/null
+sudo tee /etc/darkice.cfg > /dev/null
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/95b2a47a8b98e8301f11992f51698fc925c42128/Images/image97.png)
