@@ -707,7 +707,6 @@ Primero actualizamos los paquetes de la máquina:
 
 ```bash
 sudo apt update
-sudo apt upgrade -y
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image147.png)
@@ -715,7 +714,7 @@ sudo apt upgrade -y
 Luego instalamos el servicio de nginx:
 
 ```bash
-sudo apt install nginx -y
+sudo apt install nginx apache2-utils -y
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image64.png)
@@ -723,7 +722,8 @@ sudo apt install nginx -y
 Creamos la estructura de directorios web:
 
 ```bash
-sudo mkdir -p /web /admin
+sudo mkdir -p /var/www/pt-grup1-asixcd1.itb.cat/web
+sudo mkdir -p /var/www/pt-grup1-asixcd1.itb.cat/admin
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image95.png)
@@ -731,8 +731,8 @@ sudo mkdir -p /web /admin
 Agregamos contenido temporal para poder hacer pruebas en las páginas:
 
 ```bash
-echo "<h1>Bienvenido a PT-GRUP1-ASIXC!</h1>" | sudo tee /web/index.html
-echo "<h1>Área Administrativa</h1>" | sudo tee /admin/index.html
+echo "<h1>Web Page</h1>" | sudo tee /var/www/pt-grup1-asixcd1.itb.cat/web/index.html
+echo "<h1>Admin Page</h1>" | sudo tee /var/www/pt-grup1-asixcd1.itb.cat/admin/index.html
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image91.png)
@@ -740,8 +740,7 @@ echo "<h1>Área Administrativa</h1>" | sudo tee /admin/index.html
 Agregamos permisos:    
 
 ```bash
-sudo chown -R www-data:www-data /web /admin
-sudo chmod -R 755 /web /admin
+sudo chown -R www-data:www-data /var/www/pt-grup1-asixcd1.itb.cat
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image121.png)
@@ -759,7 +758,8 @@ Configuramos nginx con virtual host y https:
 Primero creamos los directorios para los certificados:
 
 ```bash
-sudo mkdir -p /etc/nginx/ssl
+sudo mkdir -p /etc/ssl/pt-grup1
+cd /etc/ssl/pt-grup1
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image52.png)
@@ -767,10 +767,7 @@ sudo mkdir -p /etc/nginx/ssl
 Creamos el certificado con openssl:
 
 ```bash
-sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
--keyout /etc/nginx/ssl/server.key \
--out /etc/nginx/ssl/server.crt \
--subj "/C=ES/ST=Barcelona/L=Barcelona/O=ITB/CN=pt-grup1-asixcd1.itb.cat"
+sudo openssl req -x509 -newkey rsa:2048 -keyout /etc/nginx/ssl/server.key pt-grup1.key -out  pt-grup1.crt -days 365 -nodes
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image72.png)
@@ -778,31 +775,49 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 Luego creamos el archivo de configuración `/etc/nginx/sites-available/pt-grup1-asixcd1.itb.cat` y añadimos el siguiente contenido:
 
 ```nginx
+
+GNU nano 6.2                             /etc/nginx/sites-available/pt-grup1-asixcd1.itb.cat
+&nbsp;
+&nbsp;
+
 server {
     listen 80;
     server_name pt-grup1-asixcd1.itb.cat;
     return 301 https://$host$request_uri;
 }
+&nbsp;
+&nbsp;
 
 server {
     listen 443 ssl;
     server_name pt-grup1-asixcd1.itb.cat;
+&nbsp;
+&nbsp;
 
-    ssl_certificate /etc/nginx/ssl/server.crt;
-    ssl_certificate_key /etc/nginx/ssl/server.key;
+    ssl_certificate /etc/ssl/pt-grup1/pt-grup1.crt;
+    ssl_certificate_key /etc/ssl/pt-grup1/pt-grup1.key;
+&nbsp;
+&nbsp;
 
-    root /web;
+    root /var/www/pt-grup1-asixcd1.itb.cat/web;
     index index.html;
+&nbsp;
+&nbsp;
 
     location / {
         try_files $uri $uri/ =404;
     }
+&nbsp;
+&nbsp;
 
-    location /admin {
-        auth_basic "Área Restringida";
+    location /admin/ {
+        alias /var/www/pt-grup1-asixcd1.itb.cat/admin/;
+        auth_basic "Restricted Content";
         auth_basic_user_file /etc/nginx/.htpasswd;
-        root /;
-        try_files $uri $uri/ =404;
+        index index.html;
+        # Configuramos para que al apartado de admin solo se pueda acceder mediante la ip publica del #inst
+        allow 3.214.255.64;
+        deny all;
     }
 }
 ```
@@ -821,7 +836,6 @@ Verificamos y reiniciamos el servicio:
 
 ```bash
 sudo nginx -t
-sudo systemctl restart nginx
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image172.png)
@@ -830,7 +844,7 @@ Comprobamos mediante el curl:
 
 https (admin)
 ```bash
-curl -k -u admin:pirineus https://localhost/admin/
+curl -k -u admin:pirineus https://pt-grup1-asixcd1.itb.cat/admin/
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image122.png)
