@@ -2033,6 +2033,38 @@ El tráfico de red representa más del 99 % de la huella de carbono estimada par
 
 De este modo, el CPD no solo minimiza su huella de carbono y optimiza recursos, sino que también aborda de forma integrada múltiples metas de la Agenda 2030, garantizando sostenibilidad ambiental, innovación tecnológica y resiliencia.
 
+### Propuesta de medidas de reducción u optimización:
+
+- **Reducir horas de funcionamiento**
+  - Apagar servicios no críticos (por ejemplo, entornos de pruebas) en horarios valle.
+  - Automatizar paradas con AWS Lambda/EventBridge.
+  - Ahorro estimado: hasta 86 kWh/año (~8,6 kg CO₂).
+
+- **Usar energía renovable**
+  - Migrar a regiones de AWS con 100 % renovable (ej. `eu-north-1`, `us-west-2`).
+  - En el CPD, ampliar paneles solares o incluir baterías.
+  - Reduce casi a cero las emisiones en AWS.
+
+- **Elegir regiones más eficientes**
+  - Priorizar regiones con baja huella (ej. Estocolmo, Frankfurt).
+  - Redirigir tráfico CloudFront a PoPs sostenibles.
+  - Evaluar con AWS Carbon Footprint Tool.
+
+- **Optimizar tráfico y streaming**
+  - Usar códecs eficientes (H.265, AV1) y streaming adaptativo.
+  - Comprimir objetos estáticos (Brotli, Zstd).
+  - Reducción estimada de datos: hasta 40 % (~4 t CO₂ menos).
+
+- **Mejorar almacenamiento**
+  - Activar S3 Intelligent-Tiering.
+  - Migrar backups antiguos a almacenamiento en frío.
+  - Eliminar duplicados y versiones innecesarias.
+
+- **Monitorizar la huella**
+  - Activar AWS Carbon Footprint Tool y métricas en CloudWatch.
+  - Establecer KPIs como g CO₂ por stream o kWh por usuario.
+
+
 **1- Identificar los recursos empleados, por ejemplo:**
 - Qué servicios se han desplegado (tipos de máquinas, servicios de nube, protocolos)
 - Qué recursos consumen (CPU, RAM, almacenamiento, ancho de banda)
