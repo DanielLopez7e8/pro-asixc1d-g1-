@@ -1654,6 +1654,7 @@ Se trata de diseñar e implementar una base de datos para la gestión del person
 - Hay que tener en cuenta que los datos que cojáis sean los de 2025
 
 Convenio colectivo estatal de empresas de consultoría, tecnologías de la información y estudios de mercado y de la opinión pública. : [BOE-A-2025-7766](https://www.boe.es/boe/dias/2025/04/16/pdfs/BOE-A-2025-7766.pdf) para más detalles.
+<embed src="https://www.boe.es/boe/dias/2025/04/16/pdfs/BOE-A-2025-7766.pdf" type="application/pdf" width="100%" height="600px">
 
 Se pide hacer el diseño entidad-relación, la transformación a relacional y la implementación en un Sistema Gestor de Bases de Datos (MySQL, Oracle, etc.) con la introducción de un número significativo de datos.
 
