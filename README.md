@@ -1276,7 +1276,7 @@ Comprobación:
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7aac80fa7e811e22f865bd2b5d81997ff5d49bbf/Images/image6.png)
 
-Añadimos estas líneas con tal de encriptar la información saliente del SRV2 al SRV3. La información está encriptada.
+Añadimos estas líneas con tal de encriptar la información saliente del SRV2 al SRV3.
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/7aac80fa7e811e22f865bd2b5d81997ff5d49bbf/Images/image75.png)
 
