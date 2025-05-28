@@ -887,6 +887,7 @@ curl -k -o /dev/null -w "%{speed_download} bytes/sec\n" https://3.214.255.64/tru
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image166.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/eba27213dcf749fcd629d6c012d82acb8814abbe/Images/image170.png)
 
 Estadísticas del servidor (GoAccess):
 - Hemos instalado GoAccess y lo usamos para generar stats.html
