@@ -1901,7 +1901,7 @@ SELECT * FROM Empleado;
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image126.png)
 
-Creamos los usuarios y le damos los permisos:
+Creamos los usuarios y les damos los permisos:
 ```sql
 mysql> CREATE USER 'sofia'@'%' IDENTIFIED BY 'Sofia2025!';
 Query OK, 0 rows affected (0.01 sec)
@@ -1940,7 +1940,6 @@ mysql>
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c2245d0b110801cc331b059a1542493fb66d1773/Images/image4.png)
-
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c799924e1adcaee2423f19e7b75e0aab37131aaf/Images/image19.png)
 
 Accedemos a la BD:
