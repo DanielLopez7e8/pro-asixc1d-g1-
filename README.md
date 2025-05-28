@@ -69,7 +69,7 @@
 
 | Módulo | Peso | Tarea | RA | Descripción |
 |--------|------|-------|----|--------------------|
-| 0371 Conocimientos de maquinaria | 30 | 1 | RA4 | Implanta hardware específico de centros de proceso de datos (CPD), analizando las características y aplicaciones |
+| 0371 Fundamentos de maquinaria | 30 | 1 | RA4 | Implanta hardware específico de centros de proceso de datos (CPD), analizando las características y aplicaciones |
 | 0373 Lenguaje de Marcas | 2 | 5 | RA3 | Accede y manipula documentos web utilizando lenguajes de guiones de cliente. |
 | 0373 Lenguaje de Marcas | 2 | 5 | RA5 | Realiza conversiones sobre documentos para el intercambio de información utilizando técnicas, lenguajes y herramientas de procesamiento. |
 | 0373 Lenguaje de Marcas | 2 | 5 | RA6 | Gestiona la información en formatos de intercambio de datos analizando y utilizando tecnologías de almacenamiento y lenguajes de consulta. |
