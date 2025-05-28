@@ -1925,6 +1925,8 @@ mysql> CREATE USER 'raul'@'%' IDENTIFIED BY 'Raul2025!';
 Query OK, 0 rows affected (0.01 sec)
 ```
 
+![Captura de pantalla]((https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/c2245d0b110801cc331b059a1542493fb66d1773/Images/image4.png))
+
 Permisos
 ```bash
 mysql> GRANT SELECT (Nombre, Apellidos, CodigoGrupoNivel) ON BD_Transversal.Empleado TO 'raul'@'%';
