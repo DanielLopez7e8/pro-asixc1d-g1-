@@ -873,24 +873,17 @@ Estructura del nginx:
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image23.png)
 
 Servidor de audio con nginx de baja demanda:
-```bash
-sudo mkdir -p /web/audio
-sudo cp sample.mp3 /web/audio/
-```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image159.png)
 
 Servidor de video con nginx:
-```bash
-sudo mkdir -p /web/video
-sudo cp sample.webm /web/video/
-```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image48.png)
 
 Simulación de ancho de banda, hemos generado un archivo grande (test100mb.bin) con dd para que mediante el curl los clientes puedan ver el ancho de banda:
+
 ```bash
-dd if=/dev/urandom of=/web/test100mb.bin bs=1M count=100
+curl -k -o /dev/null -w "%{speed_download} bytes/sec\n" https://3.214.255.64/trueno-feid.mp3
 ```
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/f5805997ecddd61cec236651922479b4342bec77/Images/image166.png)
