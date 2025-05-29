@@ -968,7 +968,7 @@ Bryan: <br>
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image66.png)
 
 Dani: <br>
-![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image1.png)
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/751216ec2b02ea6f52d06877c05be37fcd6222a2/Images/Captura%20de%20pantalla%20de%202025-05-29%2009-39-37.png)
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/50400c2d0b9bf67b3612a70df9cee2441ac69a3e/Images/image109.png)
 
