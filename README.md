@@ -1182,6 +1182,10 @@ quote PASV
 
 ![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/06c56644eba54dd42818963351cc5ce067d0f4bd/Images/image77.png)
 
+SFTP:
+
+![Captura de pantalla](https://github.com/DanielLopez7e8/pro-asixc1d-g1-/blob/ecf8958686a4288c1c80f517774222cbdf31ef3f/Images/SFTP.png)
+
 Backups:
 - Utilizaremos el siguiente script:
 
